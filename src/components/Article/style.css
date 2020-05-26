@@ -1,0 +1,49 @@
+.card-footer {
+    background-color: slategray;
+}
+/* https://www.geeksforgeeks.org/how-to-get-circular-buttons-in-bootstrap-4/ */
+.btn-circle {
+    float: right;
+    background-color: dimgrey;
+    color: white;
+}
+.btn-circle.btn-sm {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    border-radius: 15px;
+    font-size: 8px;
+    text-align: center;
+}
+.btn-circle.btn-md {
+    width: 50px;
+    height: 50px;
+    padding: 7px 10px;
+    border-radius: 25px;
+    font-size: 10px;
+    text-align: center;
+}
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.float{
+    position:absolute;
+    width:50px;
+    height:50px;
+    top:230px;
+    right:10px;
+    background-color:cornflowerblue;
+    color:white;
+    border-radius:47px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+}
+.my-float{
+    margin-top:11px;
+}

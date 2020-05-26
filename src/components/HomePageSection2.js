@@ -8,7 +8,7 @@ class HomePageSection2 extends React.Component {
             <section>
                 <MDBRow className="mb-4 wow fadeIn">
                     <MDBCol lg="6" md="12" className="px-4">
-                        <h3 className="h3 mb-3">Découvrir de nouvelles pépites ludiques</h3>
+                        <h3 className="text-center h3 mb-3">Découvrir de nouvelles pépites ludiques</h3>
                         <div className="row">
                             <div className="col-1 mr-3">
                                 <i className="fas fa-star fa-2x pink-text" />

@@ -13,7 +13,7 @@ class HomePageSection1 extends React.Component {
                         </MDBAnimation>
                     </MDBCol>
                     <div className="col-md-6 mb-4">
-                        <h3 className="h3 mb-3">Trouver de nouveaux partenaires</h3>
+                        <h3 className="text-center h3 mb-3">Trouver de nouveaux partenaires</h3>
                         <p>Vous en avez marre de tourner en rond..., envie de <strong>nouveaux
                             partenaires</strong> de jeu ? de découvrir des <strong>nouvelles
                             stratégies</strong> auxquelles vous n'auriez même pas pensé ?</p>
