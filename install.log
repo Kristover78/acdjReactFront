@@ -1,0 +1,3 @@
+npm install node-sass --save
+npm install dotenv auth0-js
+npm install axios
