@@ -5,56 +5,70 @@ import HomePageSection1 from '../components/HomePageSection1';
 import HomePageSection2 from "../components/HomePageSection2";
 import HomePageSection3 from "../components/HomePageSection3";
 import HomePageSection4 from "../components/HomePageSection4";
+import ACDJNavbar from "../components/ACDJNavbar";
+import ACDJFooter from "../components/ACDJFooter";
+import '../assets/css/HomePage.css';
 
 class HomePage extends React.Component {
   render() {
     return (
-      <div>
-          <MDBView src={WelcomeImage}>
-            <MDBMask
-                overlay="black-light"
-                className="flex-center flex-column text-white text-center">
-              <MDBContainer>
-                <div className="row wow fadeIn">
-                  <div className="col-md-6 mb-4 white-text text-md-left">
-                    <h1 className="display-4 font-weight-bold">
-                      Association au Confluent des{' '}
-                      <span style={{ color: 'orange' }}>J</span>eux
-                    </h1>
-                    <hr className="hr-light" />
-                    <p>
-                      <strong>
-                        Jeux de société, de figurine, de carte, tournois,...
-                      </strong>
-                    </p>
-                    <p className="mb-4 d-none d-md-block">
-                      <strong>
-                        Nous rejoindre si vous habitez aux alentours de Conflans
-                        Ste Honorine (78700), c'est pouvoir ressortir vos
-                        vieilles boites de l'armoire, car nous seront là pour
-                        les tester :-)
-                      </strong>
-                    </p>
-                  </div>
-                </div>
-              </MDBContainer>
-            </MDBMask>
-          </MDBView>
+        <div>
+          <header>
 
-          <MDBContainer className="my-5">
-            <h4 className="h4 text-center mb-5">
-              Vous êtes aux alentours de Conflans Ste Honorine ! Si vous
-              voulez...
-            </h4>
-            <HomePageSection1 />
-            <hr className="my-5" />
-            <HomePageSection2 />
-            <hr className="my-5" />
-            <HomePageSection3 />
-            <hr className="my-5" />
-            <HomePageSection4 />
-          </MDBContainer>
-      </div>
+            <ACDJNavbar homepage={true} />
+          </header>
+          <main>
+            <div className='flyout'>
+              <MDBView  src={WelcomeImage}>
+                <MDBMask
+                    overlay="black-light"
+                    className="flex-center flex-column text-white text-center">
+                  <MDBContainer>
+                    <div className="row wow fadeIn">
+                      <div className="col-md-6 mb-4 white-text text-md-left">
+                          <h3 className="display-4">association
+                          <div className="font-weight-bold acdj-home-title">au Confluent des{' '}
+                              <span style={{color: 'orange'}}>J</span>eux</div>
+                          </h3>
+                        <hr className="hr-light"/>
+                        <p className="mb-3">
+                          <strong>
+                            Jeux de société, de figurine, de carte, tournois,...
+                          </strong>
+                        </p>
+                        <p className="d-none d-md-block">
+                          <strong>
+                            Nous rejoindre si vous habitez aux alentours de Conflans
+                            Ste Honorine (78700), c'est pouvoir ressortir vos
+                            vieilles boites de l'armoire, car nous seront là pour
+                            les tester :-)
+                          </strong>
+                        </p>
+                      </div>
+                    </div>
+                  </MDBContainer>
+                </MDBMask>
+              </MDBView>
+
+              <MDBContainer className="my-5">
+                  <h4 className="h4 text-center mb-5">
+                    Vous êtes aux alentours de Conflans Ste Honorine ! Si vous
+                    voulez...
+                  </h4>
+                  <HomePageSection1/>
+                  <hr className="my-5"/>
+                  <HomePageSection2/>
+                  <hr className="my-5"/>
+                  <HomePageSection3/>
+                  <hr className="my-5"/>
+                  <HomePageSection4/>
+              </MDBContainer>
+            </div>
+          </main>
+          <footer>
+            <ACDJFooter/>
+          </footer>
+        </div>
     );
   }
 }

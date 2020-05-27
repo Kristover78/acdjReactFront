@@ -1,27 +1,35 @@
 import React from "react";
 import {
-    MDBCol,
-    MDBContainer, MDBRow,
+    MDBContainer,
 } from 'mdbreact';
 import Article from '../components/Article';
 import articles from '../components/Article/ArticleData';
+import ACDJNavbar from "../components/ACDJNavbar";
+import ACDJFooter from "../components/ACDJFooter";
 
 class InfoPage extends React.Component {
   render() {
     return (
-        <MDBContainer className="my-5">
-            <h4 className="h4 mb-5">Informations</h4>
-            <MDBRow><MDBCol>
-            <div className="d-flex flex-row" style={{flexWrap: "wrap"}}>
-                {articles.map((article) =>
-                    <Article title={article.title}
-                             content={article.body}
-                             img={article.img_path}/>
-                )}
-            </div>
-            </MDBCol>
-            </MDBRow>
-        </MDBContainer>
+        <div>
+            <header>
+                <ACDJNavbar homepage={false} />
+            </header>
+            <main style={{ marginTop: '5rem' }}>
+                <MDBContainer>
+                    <h2 className="text-center mb-3">Informations</h2>
+                    <div className="d-flex flex-row justify-content-between" style={{flexWrap: "wrap"}}>
+                        {articles.map((article) =>
+                            <Article title={article.title}
+                                     content={article.body}
+                                     img={article.img_path}/>
+                        )}
+                    </div>
+                </MDBContainer>
+            </main>
+            <footer>
+                <ACDJFooter/>
+            </footer>
+        </div>
     );
   }
 }

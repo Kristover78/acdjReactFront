@@ -5,26 +5,15 @@
 	justify-content: space-between;
 }
 
-.home-feature-box .fa {
-	font-size:6rem;
-}
-
-.home-feature-box span {
-	display: block;
-	color:#111;
-	font-weight:bold;
-	margin-top:1.5rem;
-}
-
-.example-components-list li > a {
-  color: #495057;
-}
-
-.example-components-list li:last-child > a {
-	border-bottom:0;
-}
-
-.example-components-list li > a .fa {
-	color:rgba(0,0,0,.35);
-	float:right;
+@font-face {
+	font-family: 'Bangers-Regular';
+	font-style: normal;
+	font-weight: normal;
+	/*src: url('../fonts/open-sans-v13-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local('Bangers-Regular'),
+	/*url('../fonts/open-sans-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	/*url('../fonts/open-sans-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+	/*url('../fonts/open-sans-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+	url('./assets/fonts/Bangers-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+	/*url('../fonts/open-sans-v13-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
 }

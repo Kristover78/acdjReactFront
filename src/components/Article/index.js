@@ -10,8 +10,8 @@ class App extends React.Component {
             <MDBCard style={{width: "360px", height: "565px"}} className="mx-1">
                 <MDBCardImage src={DefaultArticleImage} waves/>
                 <MDBCardBody>
-                    <MDBCardTitle className="text-center">{this.props.title}
-                    </MDBCardTitle>
+                    <MDBCardTitle>{this.props.title}</MDBCardTitle>
+                    <hr/>
                     <MDBCardText>
                         {Parser(this.props.content)}
                         <a href="#" className="float">
