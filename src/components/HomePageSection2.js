@@ -29,7 +29,7 @@ const HomePageSection2 = () => {
                         <div className="col-10">
                             <h5 className="feature-title">Tests avant achat</h5>
                             <p className="grey-text">Si vous avez l'intention d'acheter un jeu pour vous, mais vous
-                                n'êtes pas sûr du choix,
+                                n'êtes pas sûr de votre choix,
                                 alors rien de mieux que de venir le <strong>tester</strong> en association.
                             </p>
                         </div>
@@ -44,9 +44,9 @@ const HomePageSection2 = () => {
                         <div className="col-10">
                             <h5 className="feature-title">Prêt de jeu</h5>
                             <p className="grey-text">Nous essayons de constituer
-                                une <strong>ludothèque</strong> avec certains titres phares.
-                                Les jeux peuvent être <strong>emprunté gratuitement</strong> pour pouvoir être joué
-                                tranquillement chez soi.</p>
+                                une <strong>ludothèque</strong> avec certains titres phares. En tant qu'adhérent,
+                                les jeux peuvent être <strong>emprunté gratuitement</strong> pour pouvoir être joué
+                                tranquillement chez soi avec ses amis.</p>
                         </div>
                     </div>
                 </MDBCol>

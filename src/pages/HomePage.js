@@ -9,12 +9,10 @@ import ACDJNavbar from "../components/ACDJNavbar";
 import ACDJFooter from "../components/ACDJFooter";
 import '../assets/css/HomePage.css';
 
-class HomePage extends React.Component {
-  render() {
+const HomePage = () => {
     return (
         <div>
           <header>
-
             <ACDJNavbar homepage={true} />
           </header>
           <main>
@@ -28,7 +26,7 @@ class HomePage extends React.Component {
                       <div className="col-md-6 mb-4 white-text text-md-left">
                           <h3 className="display-4">association
                           <div className="font-weight-bold acdj-home-title">au Confluent des{' '}
-                              <span style={{color: 'orange'}}>J</span>eux</div>
+                              <span>J</span>eux</div>
                           </h3>
                         <hr className="hr-light"/>
                         <p className="mb-3">
@@ -52,7 +50,7 @@ class HomePage extends React.Component {
 
               <MDBContainer className="my-5">
                   <h4 className="h4 text-center mb-5">
-                    Vous êtes aux alentours de Conflans Ste Honorine ! Si vous
+                    Si vous êtes aux alentours de Conflans Ste Honorine, et que vous
                     voulez...
                   </h4>
                   <HomePageSection1/>
@@ -70,7 +68,6 @@ class HomePage extends React.Component {
           </footer>
         </div>
     );
-  }
 }
 
 export default HomePage;
