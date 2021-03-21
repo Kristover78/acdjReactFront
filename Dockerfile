@@ -19,5 +19,5 @@ LABEL maintainer="Christophe Nigaud"
 MAINTAINER <cni78.2021@free.com>
 
 # start app
-EXPOSE 3000
+EXPOSE 3443
 CMD ["npm", "start"]

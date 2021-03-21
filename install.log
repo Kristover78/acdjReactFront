@@ -4,7 +4,12 @@ npm install axios
 npm install --dev prettier @react-native-community/eslint-config
 
 docker build -t acdj/front:dev .
-docker run -it --rm -v ${PWD}:/app -v /app/node_modules -p 3001:3000 -e CHOKIDAR_USEPOLLING=true ps-container:dev
+docker run --detach --name acdjfront -p 3443:3443 acdj/front:dev
 
-docker build -t acdj/front:dev .
-docker run -it --rm -v ${PWD}:/app -v /app/node_modules -p 3001:3000 -e CHOKIDAR_USEPOLLING=true ps-container:dev
+docker container ls
+docker container commit 02b543bd6d22 acdj/front:dev
+docker tag acdj/front:dev actusoft/acdjfront:dev
+docker push actusoft/acdjfront:dev
+
+docker pull actusoft/acdjfront:dev
+docker run --detach --name acdjfront -p 3443:3443 actusoft/acdjfront:dev
