@@ -7,6 +7,7 @@ import {
 import ACDJNavbar from "../components/ACDJNavbar";
 import ACDJFooter from "../components/ACDJFooter";
 import SectionImage from "../assets/img/imgContacts.jpg";
+import MapWithAMarker from "../components/gmap";
 
 const ContactPage = () => {
     return (
@@ -29,21 +30,22 @@ const ContactPage = () => {
                                     Prix de groupe famille et couple : +5 € au dela de la première personne ! (nous
                                     nous arrangerons bien sûr si vous nous rejoignez en cours d'année)</p>
                             </MDBCol>
-                            <MDBCol md="6" className="mb-4">
+                            <MDBCol md="6" className="mb-4 text-center">
                                 <MDBAnimation reveal type='fadeIn'>
-                                    <img src={SectionImage} className="img-fluid z-depth-1-half" alt=""/>
+                                    <img src={SectionImage} width={"80%"} className="img-fluid z-depth-1-half" alt=""/>
                                 </MDBAnimation>
                             </MDBCol>
                         </MDBRow>
                         <MDBRow>
                             <MDBCol md="6" className="mb-4">
-                                <div id="map-container-google-1" className="z-depth-1-half map-container"
+                                <div id="map-container" className="z-depth-1-half map-container mb-5"
                                      style={{height: "300px"}}>
-                                    <iframe
-                                        title="google map"
-                                        src="https://maps.google.com/maps?key=AIzaSyBGlXoAwIsSlO_Tuwtcfnj1UbefTwRcsWQ&q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                        frameBorder="0"
-                                        style={{border:"0"}} allowFullScreen/>
+                                    <MapWithAMarker
+                                        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGlXoAwIsSlO_Tuwtcfnj1UbefTwRcsWQ&v=3.exp&libraries=geometry,drawing,places"
+                                        loadingElement={<div style={{ height: `100%` }} />}
+                                        containerElement={<div style={{ height: `400px` }} />}
+                                        mapElement={<div style={{ height: `100%` }} />}
+                                    />
                                 </div>
                             </MDBCol>
                             <MDBCol md="6" className="mb-4 text-center">
@@ -52,34 +54,6 @@ const ContactPage = () => {
                                 78700 Conflans Ste Honorine<br/>
                                 (Près du marché de Chennevières)
                             </MDBCol>
-                        </MDBRow>
-                        <MDBRow>
-                            <div class="offset-md-4 col-md-4 mb-4">
-                                <MDBCard>
-                                    <MDBCardBody className="purple-gradient white-text">
-                                        <MDBCardTitle className="text-center">Ecrivez-nous !</MDBCardTitle>
-                                        <MDBCardText>
-                                            <form class="needs-validation" novalidate>
-                                                <p className="h5 text-center mb-4"></p>
-                                                <div className="white-text">
-                                                    <MDBInput label="Prénom" icon="user" group type="text" validate error="wrong"
-                                                              success="right" required/>
-                                                    <MDBInput label="Votre Email" icon="envelope" group type="email" validate error="wrong"
-                                                              success="right" required />
-                                                    <MDBInput label="Sujet" icon="tag" group type="text" validate error="wrong" success="right" />
-                                                    <MDBInput type="textarea" rows="2" label="Votre message" icon="pencil-alt" required />
-                                                </div>
-                                                <div className="text-center">
-                                                    <MDBBtn outline color="secondary">
-                                                        Envoyer !
-                                                        <MDBIcon far icon="paper-plane" className="ml-1" />
-                                                    </MDBBtn>
-                                                </div>
-                                            </form>
-                                        </MDBCardText>
-                                    </MDBCardBody>
-                                </MDBCard>
-                            </div>
                         </MDBRow>
                     </section>
                 </MDBContainer>

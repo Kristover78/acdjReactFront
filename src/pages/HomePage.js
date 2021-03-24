@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBContainer, MDBMask, MDBView } from 'mdbreact';
+import {MDBAnimation, MDBContainer, MDBMask, MDBView} from 'mdbreact';
 import WelcomeImage from '../assets/img/20170106_213000.jpg';
 import HomePageSection1 from '../components/HomePageSection1';
 import HomePageSection2 from "../components/HomePageSection2";
@@ -24,10 +24,12 @@ const HomePage = () => {
                   <MDBContainer>
                     <div className="row wow fadeIn">
                       <div className="col-md-6 mb-4 white-text text-md-left">
+                          <MDBAnimation type="bounce">
                           <h3 className="display-4">association
                           <div className="font-weight-bold acdj-home-title">au Confluent des{' '}
                               <span>J</span>eux</div>
                           </h3>
+                          </MDBAnimation>
                         <hr className="hr-light"/>
                         <p className="mb-3">
                           <strong>

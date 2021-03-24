@@ -12,7 +12,7 @@ const HomePageSection3 = () => {
                     </MDBAnimation>
                 </MDBCol>
                 <MDBCol md="6" className="mb-4">
-                    <h3 className="text-center h3 mb-3">Avoir peur</h3>
+                    <h3 className="text-center h3 mb-3">Avoir des frissons !</h3>
                     <p>Partir à l'<strong>aventure ludique</strong>, c'est savoir prendre des risques et choisir le
                         bon chemin pour atteindre ses objectifs.</p>
                     <p>Découvrir de nouveaux terrains de jeu, n'est-ce pas excitant ?!</p>

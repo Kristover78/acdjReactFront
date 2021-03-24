@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
 import Routes from "../../navigations/Routes";
+import { CookiesProvider } from 'react-cookie';
 //import Auth from './Auth';
 //const auth = new Auth();
 // https://auth0.com/blog/handling-authentication-in-react-with-context-and-hooks/
@@ -13,9 +14,11 @@ class Index extends Component {
 
   render() {
     return (
-        <Router>
-            <Routes/>
-        </Router>
+        <CookiesProvider>
+            <Router>
+                <Routes/>
+            </Router>
+        </CookiesProvider>
     );
   }
 }

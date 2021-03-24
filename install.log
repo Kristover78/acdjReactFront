@@ -3,11 +3,12 @@ npm install dotenv auth0-js
 npm install axios
 npm install --dev prettier @react-native-community/eslint-config
 
+# --> ajouter la KEY dans /security avant le build
 docker build -t acdj/front:dev .
 docker run --detach --name acdjfront -p 3443:3443 acdj/front:dev
 
 docker container ls
-docker container commit 02b543bd6d22 acdj/front:dev
+docker container commit f6bd60775102 acdj/front:dev
 docker tag acdj/front:dev actusoft/acdjfront:dev
 docker push actusoft/acdjfront:dev
 

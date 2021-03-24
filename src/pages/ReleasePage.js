@@ -40,9 +40,9 @@ const ReleasePage = () => {
                                     <li><span style={{textDecoration: "line-through"}}>Technique: Upgrade JSF (2.2 -> 2.3)</span></li>
                                 </ol>
                                 <h3>Suivi des versions</h3>
-                                <h4>v3.0.0 - xx/yy/2020</h4>
+                                <h4>v3.0.0 - 21/03/2020</h4>
                                 <ul>
-                                    <li>Réécriture complète du site en React js (MDB)</li>
+                                    <li>Réinitialisation du site en React js (MDB)</li>
                                 </ul>
                                 <h4>v2.9.1 - 12/11/2019</h4>
                                 <ul>

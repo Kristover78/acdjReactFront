@@ -18,9 +18,9 @@ const ForumPage = () => {
                     <section className="mt-5 wow fadeIn">
                         <MDBRow>
                             <MDBCol md="6" className="mb-4">
-                                <p>Pour communiquer ensemble, rien de plus simple qu'un outil adapté.</p>
-                                <p>Toute le monde n'apprécie pas forcément Facebook. Nos avons donc pris le parti
-                                    d'utiliser Discord. Un outil neutre et complet.</p>
+                                <p>Nous avons au moins un moyen performant pour communiquer ensemble grâce à Discord.</p>
+                                <p>Rien de mieux qu'un outil adapté à cet effet. Toute le monde n'apprécie pas forcément Facebook donc nous avons pris le parti
+                                    d'utiliser cet outil qui reste neutre et complet.</p>
                             </MDBCol>
                             <MDBCol md="6" className="mb-4">
                                 <iframe src="https://discordapp.com/widget?id=540809716042039298&theme=dark" width="350"

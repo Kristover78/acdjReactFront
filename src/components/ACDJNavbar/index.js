@@ -72,9 +72,9 @@ const ACDJNavbar = (props) => {
             </MDBNavbarNav>
             <MDBNavbarNav right>
               <MDBNavItem>
-                <MDBBtn outline color="white" size="sm" onClick={toggleModal}>
+                {/* <MDBBtn> outline color="white" size="sm" onClick={toggleModal}>
                   Se connecter
-                </MDBBtn>
+                </MDBBtn> */}
               </MDBNavItem>
             </MDBNavbarNav>
           </MDBCollapse>

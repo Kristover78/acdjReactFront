@@ -34,7 +34,7 @@ const MentionsPage = () => {
                                     <ul>
                                         <li>Siège social : 2 rue Kellermann - 59100 Roubaix - France</li>
                                         <li>RCS Lille Métropole 424 761 419 00045</li>
-                                        <li>le serveur OVH est situé à Strasbourg (SBG1) - France</li>
+                                        <li>le serveur OVH est situé à Gravelines (os-gra6) - France</li>
                                     </ul>
 
                                     <h1>CHARTE DE PROTECTION DES DONNÉES PERSONNELLES</h1>
