@@ -24,7 +24,7 @@ const ForumPage = () => {
                             </MDBCol>
                             <MDBCol md="6" className="mb-4">
                                 <iframe src="https://discordapp.com/widget?id=540809716042039298&theme=dark" width="350"
-                                        height="380" allowTransparency="true" frameBorder="0" />
+                                        height="380" allowTransparency="true" frameBorder="0" title={"Discord"} />
                             </MDBCol>
                         </MDBRow>
                     </section>

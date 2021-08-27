@@ -1,11 +1,9 @@
 import React from "react";
-import {
-    MDBContainer,
-} from 'mdbreact';
-import Article from '../components/Article';
-import articles from '../components/Article/ArticleData';
 import ACDJNavbar from "../components/ACDJNavbar";
 import ACDJFooter from "../components/ACDJFooter";
+import articlesdata from "../components/ArticlesContainer/articledata";
+import Article from "../components/ArticlesContainer/Article";
+import {MDBCol, MDBContainer, MDBRow} from "mdbreact";
 
 class InfoPage extends React.Component {
   render() {
@@ -16,14 +14,19 @@ class InfoPage extends React.Component {
             </header>
             <main style={{ marginTop: '5rem' }}>
                 <MDBContainer>
-                    <h2 className="text-center mb-3">Informations</h2>
-                    <div className="d-flex flex-row justify-content-between" style={{flexWrap: "wrap"}}>
-                        {articles.map((article) =>
-                            <Article title={article.title}
-                                     content={article.body}
-                                     img={article.img_path}/>
-                        )}
-                    </div>
+                    <MDBRow>
+                        <MDBCol size={10}>
+                            <div className="d-flex flex-column">
+                                {
+                                articlesdata.map((article) =>
+                                    <Article title={article.title}
+                                             content={article.body}
+                                             author={article.author}
+                                             date={article.date}
+                                             img={article.img_path}/>
+                                    )}
+                            </div>
+                        </MDBCol></MDBRow>
                 </MDBContainer>
             </main>
             <footer>

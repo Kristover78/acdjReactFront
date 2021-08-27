@@ -1,8 +1,6 @@
 import React from "react";
 import {
-    MDBAnimation, MDBBtn, MDBCard, MDBCardBody, MDBCardText, MDBCardTitle,
-    MDBCol, MDBContainer, MDBIcon, MDBInput,
-    MDBRow,
+    MDBAnimation, MDBCol, MDBContainer, MDBRow,
 } from 'mdbreact';
 import ACDJNavbar from "../components/ACDJNavbar";
 import ACDJFooter from "../components/ACDJFooter";

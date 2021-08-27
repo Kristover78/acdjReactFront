@@ -25,10 +25,10 @@ const HomePage = () => {
                     <div className="row wow fadeIn">
                       <div className="col-md-6 mb-4 white-text text-md-left">
                           <MDBAnimation type="bounce">
-                          <h3 className="display-4">association
-                          <div className="font-weight-bold acdj-home-title">au Confluent des{' '}
-                              <span>J</span>eux</div>
-                          </h3>
+                              <h1 classNamPrimere="display-4">association
+                              <div className="font-weight-bold acdj-home-title">au Confluent des{' '}
+                                  <span>J</span>eux</div>
+                              </h1>
                           </MDBAnimation>
                         <hr className="hr-light"/>
                         <p className="mb-3">

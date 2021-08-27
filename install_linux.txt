@@ -1,0 +1,119 @@
+sudo apt-get update
+sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/debian \
+     $(lsb_release -cs) \
+     stable"
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+systemctl status docker
+sudo apt-get apache2
+
+sudo timedatectl set-timezone "Europe/Paris"
+  170  timedatectl
+
+iptables :
+ 201  sudo iptables -F INPUT
+  202  sudo iptables -L
+  203  sudo iptables -A INPUT -i lo -j ACCEPT
+  204  sudo iptables -A INPUT -p icmp --icmp-type any -j ACCEPT
+  205  sudo iptables -A INPUT -j FILTERS
+  206  sudo iptables -A DOCKER-USER -i ens33 -j FILTERS
+  207  sudo iptables -A FILTERS -m state --state ESTABLISHED,RELATED -j ACCEPT
+  208  sudo iptables -A FILTERS -m state --state NEW -s 1.2.3.4/32 -j ACCEPT
+  209  sudo iptables -A FILTERS -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
+  210  sudo iptables -A FILTERS -m state --state NEW -m tcp -p tcp --dport 23 -j ACCEPT
+  211  sudo iptables -A FILTERS -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
+  212  sudo iptables -A FILTERS -m state --state NEW -m tcp -p tcp --dport 443 -j ACCEPT
+  213  sudo iptables -A FILTERS -j REJECT --reject-with icmp-host-prohibited
+  214  sudo iptables -L
+
+------------------------------------------------------------------------------------------
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination
+ACCEPT     all  --  anywhere             anywhere
+ACCEPT     icmp --  anywhere             anywhere             icmp any
+FILTERS    all  --  anywhere             anywhere
+
+Chain FORWARD (policy DROP)
+target     prot opt source               destination
+DOCKER-USER  all  --  anywhere             anywhere
+DOCKER-ISOLATION-STAGE-1  all  --  anywhere             anywhere
+ACCEPT     all  --  anywhere             anywhere             ctstate RELATED,ESTABLISHED
+DOCKER     all  --  anywhere             anywhere
+ACCEPT     all  --  anywhere             anywhere
+ACCEPT     all  --  anywhere             anywhere
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination
+
+Chain DOCKER (1 references)
+target     prot opt source               destination
+ACCEPT     tcp  --  anywhere             172.17.0.3           tcp dpt:3443
+ACCEPT     tcp  --  anywhere             172.17.0.4           tcp dpt:http-alt
+
+Chain DOCKER-ISOLATION-STAGE-1 (1 references)
+target     prot opt source               destination
+DOCKER-ISOLATION-STAGE-2  all  --  anywhere             anywhere
+RETURN     all  --  anywhere             anywhere
+
+Chain DOCKER-ISOLATION-STAGE-2 (1 references)
+target     prot opt source               destination
+DROP       all  --  anywhere             anywhere
+RETURN     all  --  anywhere             anywhere
+
+Chain DOCKER-USER (1 references)
+target     prot opt source               destination
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:3005
+RETURN     all  --  anywhere             anywhere
+FILTERS    all  --  anywhere             anywhere
+
+Chain FILTERS (2 references)
+target     prot opt source               destination
+ACCEPT     all  --  anywhere             anywhere             state RELATED,ESTABLISHED
+ACCEPT     all  --  1.2.3.4              anywhere             state NEW
+ACCEPT     tcp  --  anywhere             anywhere             state NEW tcp dpt:ssh
+ACCEPT     tcp  --  anywhere             anywhere             state NEW tcp dpt:http
+ACCEPT     tcp  --  anywhere             anywhere             state NEW tcp dpt:https
+REJECT     all  --  anywhere             anywhere             reject-with icmp-host-prohibited
+
+Chain PORT-SCANNING (0 references)
+target     prot opt source               destination
+RETURN     tcp  --  anywhere             anywhere             tcp flags:FIN,SYN,RST,ACK/RST limit: avg 1/sec burst 5
+DROP       all  --  anywhere             anywhere
+----------------------------------------------------------------------------------------
+systemctl status apache2.service
+
+sudo mkdir /usr/share/ca-certificates/acdj
+sudo mv ./www_au-confluent-des-jeux_fr.cer /usr/share/ca-certificates/acdj/
+sudo nano /etc/ca-certificates.conf
+sudo update-ca-certificates
+
+/etc/apache2/sites-available/au-confluent-des-jeux.conf
+<VirtualHost au-confluent-des-jeux.fr:443>
+  ServerName au-confluent-des-jeux.fr
+  ServerAdmin contact@au-confluent-des-jeux.fr
+  DocumentRoot /var/www/acdj
+
+  SSLEngine on
+  SSLCACertificatePath /etc/ssl/certs/
+  SSLCertificateFile /usr/share/ca-certificates/acdj/www_au-confluent-des-jeux_fr.cer
+  SSLCertificateKeyFile /etc/ssl/private/www.au-confluent-des-jeux.fr.key
+
+  # Logfiles:
+  CustomLog /var/log/apache2/acdj/access.log combined
+  ErrorLog /var/log/apache2/acdj/error.log
+  LogLevel warn
+  CustomLog "|/usr/bin/rotatelogs /var/log/apache2/acdj/access.log 86400" common
+
+  SSLProxyEngine          On
+  SSLProxyCheckPeerExpire On
+  SSLProxyVerifyDepth     10
+  ProxyRequests     Off
+  ProxyPreserveHost On
+  ProxyPass / https://localhost:3443/
+  ProxyPassReverse / https://localhost:3443/
+
+  ErrorDocument 503 "<div style='text-align: center; margin-top: 10%;'><h1>Site en Maintenance. Veuillez patienter svp...</h1></div>"
+
+</VirtualHost>
+
+sudo docker run --detach --name acdjfront -v "/etc/ssl/private/:/usr/src/acdj/extsecurity" -p 3443:3443 acdj/front:dev
+sudo docker exec -it acdjfront sh
