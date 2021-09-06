@@ -1,6 +1,14 @@
 
 export default [
   {
+    "id": 181809,
+    "title": "C'est parti pour une nouvelle saison !!!",
+    "img_path": "",
+    "body": "<p>Bon, la page planning des séances est enfin installée. Il ne reste plus que le retour de la mairie pour démarrer cette saison en fanfarre.<p><p>pouet !</p>",
+    "author" : "Christophe",
+    "date": "06/09/2021",
+  },
+  {
     "id": 181810,
     "title": "Animation Scènes d'été sur Conflans",
     "img_path": "20210826-image001.jpg",
@@ -14,12 +22,12 @@ export default [
     "img_path": "",
     "body": "<p>Allez hop 2 nouvelles d'un seul coup (va falloir que je finisse la partie administration de ce site), nous avons présenté à la mairie un calendrier des séances pour la saison 2021-2022. Nous vous tiendrons bien évidemment au courant des modalités futures vu les contraintes et autres restrictions à la mode en ce moment...<p>",
     "author" : "Christophe",
-    "date": "26/08/2021",
+    "date": "25/08/2021",
   },
   {
     "id": 181812,
     "title": "Journée des Association sur Conflans Ste Honorine",
-    "img_path": "",
+    "img_path": "20190907_143622.jpg",
     "body": "<p>La journée des associations est prévue le <br /><span>samedi 4 septembre<br />de 10h00 à 18h00<br />Place du marché de Chennevières<br />Rue du Maréchal Ney</span><br />Comme tous les ans nous répondrons présent à l'appel. C'est notre cher secrétaire Cédric qui aura le privilège d'animer le stand avec pour but évidemment d'enrôler un maximum d'adhérents ;-)<br />A bientôt !<p>",
     "author" : "Christophe",
     "date": "25/08/2021",
@@ -40,7 +48,4 @@ export default [
     "author" : "Christophe",
     "date": "19/03/2021",
   }
-
-
-
 ]
