@@ -1,0 +1,3 @@
+table.testtable > tbody > tr:nth-child(2) > td {
+    font-weight: bold;
+}

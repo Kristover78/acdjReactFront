@@ -9,7 +9,7 @@ docker build -t acdj/front:dev .
 docker run --detach --name acdjfront -v "D:/dev/_gitrepos/acdjReactFront/extsecurity:/usr/src/acdj/extsecurity" -p 3443:3443 acdj/front:dev
 
 docker container ls
-docker container commit 8110cbb06bb0 acdj/front:dev
+docker container commit f063e9f016a3 acdj/front:dev
 docker tag acdj/front:dev actusoft/acdjfront:dev
 docker push actusoft/acdjfront:dev
 

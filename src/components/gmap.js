@@ -9,10 +9,10 @@ import {
 const MapWithAMarker = withScriptjs(withGoogleMap(props =>
     <GoogleMap
         defaultZoom={8}
-        defaultCenter={{ lat: 49.009162, lng: 2.09739 }}
+        center={{ lat: 49.005167, lng: 2.113702 }}
     >
         <Marker
-            position={{ lat: 49.009162, lng: 2.09739 }}
+            position={{ lat: 49.005167, lng: 2.113702 }}
         />
     </GoogleMap>
 ));

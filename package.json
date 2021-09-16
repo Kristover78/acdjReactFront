@@ -1,12 +1,13 @@
 {
   "name": "acdj-front",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "// If You want to install mdbreact from our GitLab repository, please replace '4.26.1' with gitURL provided here ->": "git+https://oauth2:<YOUR-TOKEN-GOES-HERE>@git.mdbootstrap.com/mdb/react/re-pro.git",
   "dependencies": {
     "@react-native-community/eslint-config": "^1.1.0",
     "auth0-js": "^9.13.2",
     "dotenv": "^8.2.0",
+    "framer-motion": "^4.1.17",
     "html-react-parser": "^0.10.5",
     "mdbreact": "4.26.1",
     "node-sass": "^4.14.1",

@@ -1,5 +1,21 @@
 
 export default [
+
+  {
+    "id": 181807,
+    "title": "Séance du Vendredi 10 septembre 2021",
+    "img_path": "20210910_203729.jpg,20210910_203813.jpg,20210910_214207.jpg,20210910_214225.jpg,20210910_223249.jpg,20210911_001952.jpg,20210911_001958.jpg",
+    "body": "<p>Et voilà ! Nous avons pu enfin démarrer cette nouvelle saison tant attendue dans la joie et la bonne humeur.</p><p>Très beau début d'ailleurs avec 3 tables et des joueurs et joueuses qui en voulaient. C'est donc sans hésitation que je vous invite cordialement toutes et tous à notre prochaine séance pour encore plus de fun.</p><p>A bientôt !!</p>",
+    "author" : "Christophe",
+    "date": "16/09/2021",
+  },{
+    "id": 181808,
+    "title": "Saison confirmée !",
+    "img_path": "",
+    "body": "<p>Bonne nouvelle !! Mairie contactée, le calendrier est validé :-). Je vous donne donc rendez-vous demain soir Vendredi 10 à partir de 20h00 pour redémarrer une nouvelle saison qui, ce coup-ci je l'espère, ne sera pas interrompue par un enième confinement...<p><p>A bientôt !!</p>",
+    "author" : "Christophe",
+    "date": "09/09/2021",
+  },
   {
     "id": 181809,
     "title": "C'est parti pour une nouvelle saison !!!",
