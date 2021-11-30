@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import {
-  MDBBadge,
   MDBBtn,
   MDBCollapse, MDBContainer,
   MDBInput,
@@ -63,11 +62,14 @@ const ACDJNavbar = (props) => {
               </MDBNavItem>
               <MDBNavItem active={isActive('/info')}>
                 <MDBNavLink to="/info">Info
-                  <MDBBadge className='mx-2' color='warning'>1</MDBBadge>
+                  {/*<MDBBadge className='mx-2' color='warning'>1<MDBBadge>*/}
                 </MDBNavLink>
               </MDBNavItem>
               <MDBNavItem active={isActive('/seances')}>
                 <MDBNavLink to="/seances">Séances</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem active={isActive('/ludotheque')}>
+                <MDBNavLink to="/ludotheque">Ludothèque</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem active={isActive('/forum')}>
                 <MDBNavLink to="/forum">Forum</MDBNavLink>

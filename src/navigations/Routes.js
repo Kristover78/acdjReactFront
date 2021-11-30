@@ -4,10 +4,12 @@ import {Route, Switch} from 'react-router-dom';
 import HomePage from '../pages/HomePage';
 import InfoPage from "../pages/InfoPage";
 import SeancesPage from "../pages/SeancesPage";
+import LudothequePage from "../pages/LudothequePage";
 import ContactPage from "../pages/ContactPage";
 import ForumPage from "../pages/ForumPage";
 import MentionsPage from "../pages/MentionsPage";
 import ReleasePage from "../pages/ReleasePage";
+import NotFound from "../components/NotFound";
 
 class Routes extends React.Component {
   render() {
@@ -16,16 +18,12 @@ class Routes extends React.Component {
         <Route exact path='/' component={HomePage} />
         <Route exact path='/info' component={InfoPage} />
         <Route exact path='/seances' component={SeancesPage} />
+        <Route exact path='/Ludotheque' component={LudothequePage} />
         <Route exact path='/forum' component={ForumPage} />
         <Route exact path='/contact' component={ContactPage} />
         <Route exact path='/mentions' component={MentionsPage} />
         <Route exact path='/release' component={ReleasePage} />
-
-        <Route
-          render={function() {
-            return <h1>Page Inconnue</h1>;
-          }}
-        />
+        <Route component={NotFound} />
       </Switch>
     );
   }

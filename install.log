@@ -6,14 +6,14 @@ npm install --dev prettier @react-native-community/eslint-config
 # --> ajouter la KEY 'www.au-confluent-des-jeux.fr.key' dans /security avant le build
 cd D:\dev\_gitrepos\acdjReactFront
 docker build -t acdj/front:dev .
-docker run --detach --name acdjfront -v "D:/dev/_gitrepos/acdjReactFront/extsecurity:/usr/src/acdj/extsecurity" -p 3443:3443 acdj/front:dev
+docker run --detach --name acdjfront -v "D:/dev/_gitrepos/acdjReactFront/acdjHome/security:/usr/src/acdj/acdjHome/security" -p 3443:3443 acdj/front:dev
 
 docker container ls
-docker container commit f063e9f016a3 acdj/front:dev
+docker container commit f754ca51b7c6 acdj/front:dev
 docker tag acdj/front:dev actusoft/acdjfront:dev
 docker push actusoft/acdjfront:dev
 
 docker pull actusoft/acdjfront:dev
 docker stop acdjfront
 docker rm acdjfront
-docker run --detach --name acdjfront -v "/home/actusoft/acdj/extsecurity:/usr/src/acdj/extsecurity" -p 3443:3443 actusoft/acdjfront:dev
+docker run --detach --name acdjfront -v "/home/actusoft/acdjHome/security:/usr/src/acdj/acdjHome/security" -p 3443:3443 actusoft/acdjfront:dev

@@ -1,12 +1,32 @@
 import React from "react";
 import ACDJNavbar from "../components/ACDJNavbar";
 import ACDJFooter from "../components/ACDJFooter";
-import articlesdata from "../components/ArticlesContainer/articledata";
 import Article from "../components/ArticlesContainer/Article";
+import {getNewsData} from "../services/Api";
 import {MDBCol, MDBContainer, MDBRow} from "mdbreact";
 
 class InfoPage extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            articles: [],
+            dataisLoaded: false
+        };
+    }
+
+    componentDidMount() {
+        const data = getNewsData();
+        this.setState({
+            articles: data,
+            dataisLoaded: true
+        });
+    }
+
   render() {
+      const { dataisLoaded, articles } = this.state;
+      if (!dataisLoaded) return <div>
+          <h1>Veuillez patienter, chargement... </h1> </div> ;
     return (
         <div>
             <header>
@@ -18,12 +38,13 @@ class InfoPage extends React.Component {
                         <MDBCol size={10}>
                             <div className="d-flex flex-column">
                                 {
-                                articlesdata.map((article) =>
+                                articles.map((article) =>
                                     <Article title={article.title}
                                              content={article.body}
                                              author={article.author}
                                              date={article.date}
-                                             img={article.img_path}/>
+                                             path={article.img_path}
+                                             img={article.img_name}/>
                                     )}
                             </div>
                         </MDBCol></MDBRow>

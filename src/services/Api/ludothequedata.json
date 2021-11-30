@@ -1,0 +1,11 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Yedo",
+      "img_name": "/games/yedo.jpg",
+      "description": "<p>Vous êtes un chef de Clan cherchant à accumuler un maximum de Points de Prestige. Vous gagnez ces points en réussissant des crates Mission, en activant des Disciples à certains endroit du plateau de jeu.</p>",
+      "rules": "Christophe"
+    }
+  ]
+}

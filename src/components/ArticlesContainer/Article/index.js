@@ -9,16 +9,17 @@ import LightBox from "../../LightBox";
 
 class Article extends React.Component {
 
-     getImages(imageNames){
+     getImages(imageRootPath, imageNames){
         if (imageNames === ''){
             return [DefaultArticleImage];
         }
+        const imagePath = require.context('../../../../public/assets/img/info/', true);
         let imageNameArray = imageNames.split(',');
-        const imagePath = require.context('../../../assets/img/info', true);
+
         let imagesResult = [];
         for(var i = 0; i < imageNameArray.length; i++){
-            let img = imagePath('./' + imageNameArray[i]);
-             imagesResult.push(img);
+            let img = imagePath('./' + imageRootPath+ imageNameArray[i]);
+            imagesResult.push(img);
         }
         return imagesResult;
     }
@@ -31,7 +32,7 @@ class Article extends React.Component {
                         <MDBRow>
                             <MDBCol lg={"5"} xl={"4"}>
                                 <MDBView hover className={"img-fluid rounded z-depth-1-half mb-lg-0 mb-4"} >
-                                    <LightBox images={this.getImages(this.props.img)}/>
+                                    <LightBox images={this.getImages(this.props.path, this.props.img)}/>
                                 </MDBView>
                             </MDBCol>
                             <MDBCol lg={"7"} xl={"8"}>
