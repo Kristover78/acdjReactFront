@@ -1,133 +1,60 @@
-import React, {useState} from "react";
-import {
-  MDBBtn,
-  MDBCollapse, MDBContainer,
-  MDBInput,
-  MDBModal,
-  MDBModalBody,
-  MDBModalFooter,
-  MDBModalHeader,
-  MDBNavbar,
-  MDBNavbarBrand,
-  MDBNavbarNav,
-  MDBNavbarToggler,
-  MDBNavItem,
-  MDBNavLink,
-} from "mdbreact";
-import { useLocation } from 'react-router-dom';
+import React, {Component, useState} from "react";
+import {Menubar} from "primereact/menubar";
+import {useLocation, withRouter} from 'react-router-dom';
+import {connect} from "react-redux";
+import {showGrowl} from "../../services/redux/actions";
+//import 'primereact/resources/themes/cupertino/theme.css';
 import './style.css';
 
-const ACDJNavbar = (props) => {
-  let [collapse, setCollapse] = useState(false);
-  let [isWideEnough] = useState(false);
-  let [modal, setModal] = useState(false);
-  let [navbarClassname] = useState(props.homepage ? '' : 'normal-nav-bar');
-  let location = useLocation();
+export class ACDJNavbar extends Component {
 
-  function isActive(url){
-     return location.pathname === url;
+  navigateToPage = (path) => {
+    console.log('Navigate to path ' + path);
+    this.props.history.push(path);
   }
 
-  function onClick() {
-    setCollapse(!collapse);
+  render() {
+    const menuItems = [
+      {
+        label: 'Accueil',
+        icon: 'pi pi-home',
+        command: () => {this.navigateToPage('/')}
+      },
+      {
+        label: 'Info',
+        icon: 'pi pi-info-circle',
+        command: () => {this.navigateToPage('/info')}
+      },
+      {
+        label: 'seances',
+        icon: 'pi pi-info-circle',
+        command: () => {this.navigateToPage('/seances')}
+      },
+      {
+        label: 'ludotheque',
+        icon: 'pi pi-list',
+        command: () => {this.navigateToPage('/ludotheque')}
+      },
+      {
+        label: 'forum',
+        icon: 'pi pi-discord',
+        command: () => {this.navigateToPage('/forum')}
+      },
+      {
+        label: 'contact',
+        icon: 'pi pi-globe',
+        command: () => {this.navigateToPage('/contact')}
+      }
+    ]
+
+    return <Menubar model={menuItems} start={<span><strong>aCd<span style={{color: 'orange'}}>J</span></strong></span>} />;
   }
-
-  const toggleModal = () => {
-    setModal(!modal);
-  };
-
-  return (
-    <div>
-      <MDBNavbar
-        fixed="top"
-        dark
-        expand="md"
-        scrolling={props.homepage}
-        transparent={props.homepage}
-        className={navbarClassname}
-      >
-        <MDBContainer>
-          <MDBNavbarBrand href="/">
-            <strong>
-              aCd<span style={{ color: 'orange' }}>J</span>
-            </strong>
-          </MDBNavbarBrand>
-          {!isWideEnough && (
-            <MDBNavbarToggler onClick={onClick} />
-          )}
-          <MDBCollapse isOpen={collapse} navbar>
-            <MDBNavbarNav left>
-              <MDBNavItem active={isActive('/')}>
-                <MDBNavLink to="/">Accueil</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem active={isActive('/info')}>
-                <MDBNavLink to="/info">Info
-                  {/*<MDBBadge className='mx-2' color='warning'>1<MDBBadge>*/}
-                </MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem active={isActive('/seances')}>
-                <MDBNavLink to="/seances">Séances</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem active={isActive('/ludotheque')}>
-                <MDBNavLink to="/ludotheque">Ludothèque</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem active={isActive('/forum')}>
-                <MDBNavLink to="/forum">Forum</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem active={isActive('/contact')}>
-                <MDBNavLink to="/contact">Contact</MDBNavLink>
-              </MDBNavItem>
-            </MDBNavbarNav>
-            <MDBNavbarNav right>
-              <MDBNavItem>
-                {/* <MDBBtn> outline color="white" size="sm" onClick={toggleModal}>
-                  Se connecter
-                </MDBBtn> */}
-              </MDBNavItem>
-            </MDBNavbarNav>
-          </MDBCollapse>
-        </MDBContainer>
-      </MDBNavbar>
-
-      <MDBModal
-        isOpen={modal}
-        toggle={toggleModal}
-        backdrop={false}
-        size="sm"
-        centered
-      >
-        <MDBModalHeader toggle={toggleModal}>Connexion</MDBModalHeader>
-        <MDBModalBody>
-          <form>
-            <div className="grey-text">
-              <MDBInput
-                label="Email"
-                icon="envelope"
-                group
-                type="email"
-                validate
-                error="wrong"
-                success="right"
-              />
-              <MDBInput
-                label="Mot de passe"
-                icon="lock"
-                group
-                type="password"
-                validate
-              />
-            </div>
-          </form>
-        </MDBModalBody>
-        <MDBModalFooter>
-          <MDBBtn color="default" onClick={toggleModal}>
-            Annuler
-          </MDBBtn>
-          <MDBBtn color="primary">Login</MDBBtn>
-        </MDBModalFooter>
-      </MDBModal>
-    </div>
-  );
 }
+
+const mapDispatchToProps = {
+  showGrowl
+};
+
+ACDJNavbar = withRouter(connect(null, mapDispatchToProps)(ACDJNavbar))
 
 export default ACDJNavbar;

@@ -1,9 +1,10 @@
 import React from "react";
+import {DataTable} from "primereact/datatable";
+import {Column} from "primereact/column";
 import ACDJNavbar from "../components/ACDJNavbar";
 import ACDJFooter from "../components/ACDJFooter";
-import {MDBCol, MDBContainer, MDBRow, MDBTable, MDBTableBody, MDBTableHead} from "mdbreact";
-import './seancesPage.css';
 import {getSeancesList} from "../services/Api";
+import './seancesPage.css';
 
 class SeancesPage extends React.Component {
     constructor(props) {
@@ -24,25 +25,25 @@ class SeancesPage extends React.Component {
 
   render() {
       const { dataisLoaded, seances } = this.state;
-      if (!dataisLoaded) return <div>
-          <h1>Veuillez patienter, chargement... </h1> </div> ;
-    return (
+      if (!dataisLoaded)
+          return (<div><h1>Veuillez patienter, chargement... </h1> </div>);
+      return (
         <div>
             <header>
                 <ACDJNavbar homepage={false} />
             </header>
-            <main style={{ marginTop: '5rem' }}>
-                <MDBContainer>
-                    <MDBRow>
-                        <MDBCol size={10}>
+            <main style={{ marginTop: '2rem' }}>
+                <div className="p-grid">
+                    <div className="p-col-7 p-offset-2">
                             <h2>Calendrier des séances de jeu</h2>
                             <p>Calendrier pour la saison 2021-2022.</p>
-                            <MDBTable responsive striped className={"testtable"}>
-                                <MDBTableHead columns={seances.columns} />
-                                <MDBTableBody rows={seances.rows} />
-                            </MDBTable>
-                        </MDBCol></MDBRow>
-                </MDBContainer>
+                        <DataTable value={seances.data} responsiveLayout="scroll">
+                            <Column field="seance" header="Séance" />
+                            <Column field="date" header="Date" />
+                            <Column field="status" header="Statut" />
+                        </DataTable>
+                    </div>
+                </div>
             </main>
             <footer>
                 <ACDJFooter/>

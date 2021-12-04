@@ -1,5 +1,6 @@
-.page-footer {
-    background-color: rgb(28, 35, 49);
+.layout-footer {
+   /*transition(margin-left .2s);*/
+   background-color: rgb(28, 35, 49);
 }
 
 ul {

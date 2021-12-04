@@ -1,9 +1,20 @@
 import React from "react";
 import ACDJNavbar from "../components/ACDJNavbar";
 import ACDJFooter from "../components/ACDJFooter";
-import Article from "../components/ArticlesContainer/Article";
+import Article from "../components/Article";
 import {getNewsData} from "../services/Api";
-import {MDBCol, MDBContainer, MDBRow} from "mdbreact";
+import {DataView} from "primereact/dataview";
+
+const itemTemplate = (article) => {
+    return (
+        <Article title={article.title}
+                 content={article.body}
+                 author={article.author}
+                 date={article.date}
+                 imgnames={article.img_name}
+                 imgpath={article.img_path}/>
+    );
+}
 
 class InfoPage extends React.Component {
     constructor(props) {
@@ -32,23 +43,12 @@ class InfoPage extends React.Component {
             <header>
                 <ACDJNavbar homepage={false} />
             </header>
-            <main style={{ marginTop: '5rem' }}>
-                <MDBContainer>
-                    <MDBRow>
-                        <MDBCol size={10}>
-                            <div className="d-flex flex-column">
-                                {
-                                articles.map((article) =>
-                                    <Article title={article.title}
-                                             content={article.body}
-                                             author={article.author}
-                                             date={article.date}
-                                             path={article.img_path}
-                                             img={article.img_name}/>
-                                    )}
-                            </div>
-                        </MDBCol></MDBRow>
-                </MDBContainer>
+            <main style={{ marginTop: '2rem' }}>
+                <div className="p-grid">
+                    <div className="p-col-6 p-offset-3">
+                        <DataView value={articles} layout={"list"} itemTemplate={itemTemplate} />
+                    </div>
+                </div>
             </main>
             <footer>
                 <ACDJFooter/>

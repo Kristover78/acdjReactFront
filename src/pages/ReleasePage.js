@@ -1,8 +1,4 @@
 import React from "react";
-import {
-    MDBCol, MDBContainer,
-    MDBRow,
-} from 'mdbreact';
 import ACDJNavbar from "../components/ACDJNavbar";
 import ACDJFooter from "../components/ACDJFooter";
 import '../assets/css/MentionsStyle.css';
@@ -14,10 +10,9 @@ const ReleasePage = () => {
                 <ACDJNavbar homepage={false}/>
             </header>
             <main style={{ marginTop: '5rem' }}>
-                <MDBContainer>
-                    <section className="mt-5 wow fadeIn">
-                        <MDBRow>
-                            <MDBCol md="8" className="mb-4 offset-md-2">
+                    <section>
+                            <div className="p-grid">
+                                <div className="p-offset-2 p-col-8">
                                 <h2>VERSIONS ET ROADMAP DU SITE</h2>
                                 <h3>Roadmap</h3>
                                 <ol>
@@ -230,10 +225,9 @@ const ReleasePage = () => {
                                 <ul>
                                     <li> New! Réécriture complète du site</li>
                                 </ul>
-                            </MDBCol>
-                        </MDBRow>
+                                </div>
+                            </div>
                     </section>
-                </MDBContainer>
             </main>
             <footer>
                 <ACDJFooter/>

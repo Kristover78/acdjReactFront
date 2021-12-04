@@ -1,0 +1,25 @@
+.landing-zone{
+    height: 95vh;
+    background-size: cover;
+    background-image: url('../../assets/img/20170106_213000.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+.acdj-home-title {
+    font-family: 'Bangers-Regular', sans-serif;
+    font-weight: 200;
+    text-shadow: 4px 4px 4px #aaa;
+    color: darkorchid;
+}
+
+.acdj-home-title span {
+    color: darkmagenta;
+}

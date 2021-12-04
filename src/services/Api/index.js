@@ -20,6 +20,7 @@ export function getSeancesList(){
     function failureCallback(){return Promise.resolve(championsTestData)};
     return axios.get(getServiceBaseUrl()+'/api/public/card/champion/all')
         .then(successCallback, failureCallback);*/
+    //return fetch('data/products.json').then(res => res.json()).then(d => d.data);
     return seances;
 }
 

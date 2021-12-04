@@ -1,10 +1,9 @@
 import React from "react";
-import {MDBFooter} from "mdbreact";
 import './style.css';
 
 const ACDJFooter = () => {
     return (
-        <MDBFooter>
+        <div className="layout-footer">
             <div className="d-flex justify-content-around align-items-center">
                 <div className="p-2 bd-highlight">au Confluent des Jeux depuis <strong>2013</strong></div>
                 <div className="p-2 bd-highlight">
@@ -17,8 +16,7 @@ const ACDJFooter = () => {
                     </ul>
                 </div>
             </div>
-
-        </MDBFooter>
+        </div>
     )
 }
 
