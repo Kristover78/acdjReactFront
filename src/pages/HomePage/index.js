@@ -1,13 +1,13 @@
 import React from 'react';
 import {MDBAnimation, MDBContainer, MDBMask, MDBView} from 'mdbreact';
-import WelcomeImage from '../assets/img/20170106_213000.jpg';
-import HomePageSection1 from '../components/HomePageSection1';
-import HomePageSection2 from "../components/HomePageSection2";
-import HomePageSection3 from "../components/HomePageSection3";
-import HomePageSection4 from "../components/HomePageSection4";
-import ACDJNavbar from "../components/ACDJNavbar";
-import ACDJFooter from "../components/ACDJFooter";
-import '../assets/css/HomePage.css';
+import HomePageSection1 from './HomePageSection1';
+import HomePageSection2 from "./HomePageSection2";
+import HomePageSection3 from "./HomePageSection3";
+import HomePageSection4 from "./HomePageSection4";
+import ACDJNavbar from "../../components/ACDJNavbar";
+import ACDJFooter from "../../components/ACDJFooter";
+import WelcomeImage from '../../assets/img/20170106_213000.jpg';
+import './style.css';
 
 const HomePage = () => {
     return (

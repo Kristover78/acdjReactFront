@@ -1,7 +1,7 @@
 import React from "react";
 import ACDJNavbar from "../components/ACDJNavbar";
 import ACDJFooter from "../components/ACDJFooter";
-import Article from "../components/ArticlesContainer/Article";
+import Article from "../components/Article";
 import {getNewsData} from "../services/Api";
 import {MDBCol, MDBContainer, MDBRow} from "mdbreact";
 

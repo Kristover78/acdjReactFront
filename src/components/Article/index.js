@@ -1,11 +1,9 @@
 import React from "react";
 import {MDBCard, MDBCardBody, MDBCol, MDBRow, MDBView} from "mdbreact";
-import DefaultArticleImage from "../../../assets/img/infoDefault.jpg";
 import Parser from "html-react-parser";
+import LightBox from "../LightBox";
+import DefaultArticleImage from "../../assets/img/infoDefault.jpg";
 import "./style.css";
-import LightBox from "../../LightBox";
-
-
 
 class Article extends React.Component {
 
@@ -13,7 +11,7 @@ class Article extends React.Component {
         if (imageNames === ''){
             return [DefaultArticleImage];
         }
-        const imagePath = require.context('../../../../public/assets/img/info/', true);
+        const imagePath = require.context('../../../public/assets/img/info/', true);
         let imageNameArray = imageNames.split(',');
 
         let imagesResult = [];

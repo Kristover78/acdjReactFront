@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {
   MDBBtn,
-  MDBCollapse, MDBContainer,
+  MDBCollapse, MDBContainer, MDBIcon,
   MDBInput,
   MDBModal,
   MDBModalBody,
@@ -58,24 +58,24 @@ const ACDJNavbar = (props) => {
           <MDBCollapse isOpen={collapse} navbar>
             <MDBNavbarNav left>
               <MDBNavItem active={isActive('/')}>
-                <MDBNavLink to="/">Accueil</MDBNavLink>
+                <MDBNavLink to="/"><MDBIcon icon="fa fa-home"/> Accueil</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem active={isActive('/info')}>
-                <MDBNavLink to="/info">Info
+                <MDBNavLink to="/info"><MDBIcon icon="fa fa-info-circle"/> Info
                   {/*<MDBBadge className='mx-2' color='warning'>1<MDBBadge>*/}
                 </MDBNavLink>
               </MDBNavItem>
               <MDBNavItem active={isActive('/seances')}>
-                <MDBNavLink to="/seances">Séances</MDBNavLink>
+                <MDBNavLink to="/seances"><MDBIcon icon="fa fa-calendar"/> Séances</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem active={isActive('/ludotheque')}>
-                <MDBNavLink to="/ludotheque">Ludothèque</MDBNavLink>
+                <MDBNavLink to="/ludotheque"><MDBIcon icon="fa fa-game-board"/> Ludothèque</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem active={isActive('/forum')}>
-                <MDBNavLink to="/forum">Forum</MDBNavLink>
+                <MDBNavLink to="/forum"><i className="fab fa-discord"/> Forum</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem active={isActive('/contact')}>
-                <MDBNavLink to="/contact">Contact</MDBNavLink>
+                <MDBNavLink to="/contact"><MDBIcon icon="fa fa-globe"/> Contact</MDBNavLink>
               </MDBNavItem>
             </MDBNavbarNav>
             <MDBNavbarNav right>
