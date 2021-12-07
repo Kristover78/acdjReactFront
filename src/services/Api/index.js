@@ -16,6 +16,21 @@ export function getNewsData(){
 export function getSeancesList(){
     console.log("API: getSeancesList");
     const seances = require('./seancesData.json');
+    let dtNow = new Date();
+    let nextFound = false;
+    seances.data.map((item) => {
+        let currentDt = new Date(item.date);
+        item.date = currentDt.toLocaleString('fr-FR');
+        item.next = false;
+        if (currentDt< dtNow){
+            item.status = 'Terminée';
+        }
+        if (currentDt > dtNow && !nextFound){
+            item.status = 'Terminée';
+            item.next = true;
+            nextFound = true;
+        }
+    });
     /*function successCallback(res) {return res.data};
     function failureCallback(){return Promise.resolve(championsTestData)};
     return axios.get(getServiceBaseUrl()+'/api/public/card/champion/all')

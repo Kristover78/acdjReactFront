@@ -1,11 +1,12 @@
-import React from "react";
+import React, {Component} from "react";
 import Parser from "html-react-parser";
 import {Card} from "primereact/card";
 import {Galleria} from "primereact/galleria";
 import DefaultArticleImage from "../../assets/img/infoDefault.jpg";
 import "./style.css";
+import {Image} from "primereact/image";
 
-class Article extends React.Component {
+class Article extends Component {
 
     constructor(props) {
         super(props);
@@ -33,6 +34,22 @@ class Article extends React.Component {
         ];
     }
 
+    getImages(imageRootPath, imageNames){
+        return [DefaultArticleImage];
+        /*if (imageNames === ''){
+            return [DefaultArticleImage];
+        }
+        const imagePath = require.context('/assets/img/info/', true);
+        let imageNameArray = imageNames.split(',');
+
+        let imagesResult = [];
+        for(var i = 0; i < imageNameArray.length; i++){
+            let img = imagePath('./' + imageRootPath+ imageNameArray[i]);
+            imagesResult.push(img);
+        }
+        return imagesResult;*/
+    }
+
     itemTemplate(item) {
         return <img src={item} alt={item} style={{ width: '100%', display: 'block' }} />;
     }
@@ -41,19 +58,7 @@ class Article extends React.Component {
         return <img src={item} alt={item} style={{ width: '100%', display: 'block' }} />;
     }
 
-     getImages(imageRootPath, imageNames){
-        if (imageNames === ''){
-            return [DefaultArticleImage];
-        }
-        //const imagePath = require.context(', true);
-        let imageNameArray = imageNames.split(',');
-        let imagesResult = [];
-        for(var i = 0; i < imageNameArray.length; i++){
-            let img = '/assets/img/info'+imageRootPath + imageNameArray[i];
-            imagesResult.push(img);
-        }
-        return imagesResult;
-    }
+
 
     render() {
         return (
@@ -61,9 +66,7 @@ class Article extends React.Component {
                 <div className="p-shadow-5 p-mt-5">
                     <div className={"p-grid"}>
                         <div className="p-col-4">
-                            <Galleria value={this.getImages(this.props.imgpath, this.props.imgnames)}
-                                      responsiveOptions={this.responsiveOptions} numVisible={1}
-                                      circular fullScreen showItemNavigators showThumbnails={true} item={this.itemTemplate} thumbnail={this.thumbnailTemplate}/>
+                            <Image src={DefaultArticleImage} preview className="infoImg" alt="info"/>
                         </div>
                         <div className="p-col-8">
                             <h4>{this.props.title}</h4>

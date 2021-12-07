@@ -11,7 +11,7 @@ const HomePageSection1 = () => {
                     <Image src={SectionImage} className={"p-shadow-4"} alt="Des compagnons" />
                 </div>
                 <div className="p-col-5">
-                    <h3 className="text-center h3 mb-3">Trouver de nouveaux partenaires</h3>
+                    <h2>Trouver de nouveaux partenaires</h2>
                     <p>Vous en avez marre de tourner en rond..., envie de <strong>nouveaux
                         partenaires</strong> de jeu ? de découvrir des <strong>nouvelles
                         stratégies</strong> auxquelles vous n'auriez même pas pensé ?</p>

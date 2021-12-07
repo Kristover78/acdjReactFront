@@ -1,12 +1,10 @@
 .layout-footer {
-   /*transition(margin-left .2s);*/
-   background-color: rgb(28, 35, 49);
+    background-color: rgb(28, 35, 49);
 }
 
-ul {
-   margin-bottom: 0 ;
+.layout-footer ul {
+    list-style: none;
 }
-
-li {
+.layout-footer li {
     margin-right: 1.5rem;
 }

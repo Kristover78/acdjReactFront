@@ -3,7 +3,6 @@ import {Menubar} from "primereact/menubar";
 import {useLocation, withRouter} from 'react-router-dom';
 import {connect} from "react-redux";
 import {showGrowl} from "../../services/redux/actions";
-//import 'primereact/resources/themes/cupertino/theme.css';
 import './style.css';
 
 export class ACDJNavbar extends Component {
@@ -16,8 +15,8 @@ export class ACDJNavbar extends Component {
   render() {
     const menuItems = [
       {
-        label: 'Accueil',
-        icon: 'pi pi-home',
+        label: <span style={{fontSize: 22}}><strong>aCd<span style={{color: 'orange'}}>J</span></strong></span>,
+        className: 'p-offset-2',
         command: () => {this.navigateToPage('/')}
       },
       {
@@ -47,7 +46,7 @@ export class ACDJNavbar extends Component {
       }
     ]
 
-    return <Menubar model={menuItems} start={<span><strong>aCd<span style={{color: 'orange'}}>J</span></strong></span>} />;
+    return <Menubar model={menuItems} />;
   }
 }
 

@@ -15,6 +15,15 @@ class SeancesPage extends React.Component {
 
     componentDidMount() {
         const data = getLudothequeData();
+        data.map((item) => {
+            item.image = (
+                <img
+                    src={item.image}
+                    alt="image"
+                    className="someImgClass"
+                />
+            )
+        })
         this.setState({
             games: data,
             dataIsLoaded: true

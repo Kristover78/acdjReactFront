@@ -4,16 +4,16 @@ import ACDJFooter from "../components/ACDJFooter";
 import SectionImage from "../assets/img/imgContacts.jpg";
 import {GMap} from "primereact/gmap";
 
+const options = {
+    center: {lat: 49.005167, lng: 2.113702},
+    zoom: 10
+};
+
+const overlays = [
+    new google.maps.Marker({position: {lat: 49.005167, lng: 2.113702}, title:"Salle des Maréchaux"})
+];
+
 const ContactPage = () => {
-    const options = {
-        center: {lat: 49.005167, lng: 2.113702},
-        zoom: 10
-    };
-
-    const overlays = [
-        new google.maps.Marker({position: {lat: 49.005167, lng: 2.113702}, title:"Salle des Maréchaux"})
-    ];
-
     return (
         <div>
             <header>

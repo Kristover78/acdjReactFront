@@ -11,14 +11,21 @@ class SeancesPage extends React.Component {
         super(props);
         this.state = {
             seances: [],
-            dataisLoaded: false
+            dataisLoaded: false,
+            selectedSeanceId: null
         };
     }
 
     componentDidMount() {
-        const data = getSeancesList();
+        const seances = getSeancesList();
+        for (let item in seances.data) {
+            if (item.next){
+                this.setState({selectedSeanceId: item.id});
+                break;
+            }
+        }
         this.setState({
-            seances: data,
+            seances: seances,
             dataisLoaded: true
         });
     }
@@ -37,7 +44,7 @@ class SeancesPage extends React.Component {
                     <div className="p-col-7 p-offset-2">
                             <h2>Calendrier des séances de jeu</h2>
                             <p>Calendrier pour la saison 2021-2022.</p>
-                        <DataTable value={seances.data} responsiveLayout="scroll">
+                        <DataTable value={seances.data} selectionMode="single" selection={this.state.selectedSeanceId} dataKey="id">
                             <Column field="seance" header="Séance" />
                             <Column field="date" header="Date" />
                             <Column field="status" header="Statut" />

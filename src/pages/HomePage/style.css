@@ -1,16 +1,35 @@
 .landing-zone{
-    height: 95vh;
+    height: 100vh;
     background-size: cover;
     background-image: url('../../assets/img/20170106_213000.jpg');
     background-repeat: no-repeat;
     background-position: center center;
 }
-img {
-    width: 100%;
+
+.maincover {
     height: 100%;
+}
+.pink-text{
+    color: #e91e63;
+}
+.cyan-text{
+    color: #00bcd4;
+}
+.green-text {
+    color: #4caf50;
+}
+.sections img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
 }
 h4 {
     font-size: 1.5rem;
+    line-height: 1.2;
+}
+.main-title {
+    font-weight: 300;
+    font-size: 3.5rem;
     line-height: 1.2;
 }
 .acdj-home-title {
@@ -19,7 +38,12 @@ h4 {
     text-shadow: 4px 4px 4px #aaa;
     color: darkorchid;
 }
-
 .acdj-home-title span {
     color: darkmagenta;
+}
+.ulawesome {
+    width: 1.3em;
+}
+.fa-ul li {
+    margin-bottom: 1.5rem;
 }
