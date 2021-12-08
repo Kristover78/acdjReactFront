@@ -22,7 +22,7 @@ const HomePageSection2 = () => {
                     </ul>
                 </div>
                 <div className="p-col-5">
-                    <img src={SectionImage} alt="Nouveaux jeux" />
+                    <img src={SectionImage} class="p-shadow-4" alt="Nouveaux jeux" />
                 </div>
             </div>
         </section>

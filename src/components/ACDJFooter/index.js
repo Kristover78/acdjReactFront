@@ -4,11 +4,11 @@ import './style.css';
 const ACDJFooter = () => {
     return (
         <div className="layout-footer">
-            <div className="p-grid">
-                <div className="p-col-6 white-text layout-left p-align-center">
-                    {'  '}au Confluent des <span style={{color: 'orange'}}>J</span>eux, depuis <strong>2013</strong><br/>
+            <div className="p-d-flex p-jc-between">
+                <div className="p-mr-2 p-as-center white-text">
+                    <div className="p-ml-3">au Confluent des <span style={{color: 'orange'}}>J</span>eux, depuis <strong>2013</strong></div>
                 </div>
-                <div className="p-col-6 p-col-align-end white-text ">
+                <div className="p-mr-2 p-as-center">
                     <ul className="p-menubar-root-list">
                         <li><a href="/mentions"><i className="fas fa-balance-scale white-text" /></a></li>
                         <li><a href="https://discord.gg/EkxMDpy" target="_blank" rel="noopener noreferrer"><i className="fab fa-discord white-text"/></a></li>

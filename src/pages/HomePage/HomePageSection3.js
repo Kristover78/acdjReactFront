@@ -6,7 +6,7 @@ const HomePageSection3 = () => {
         <section>
             <div className="p-grid">
                 <div className="p-col-5 p-offset-1">
-                    <img src={SectionImage} alt="Aventure"/>
+                    <img src={SectionImage} class="p-shadow-4" alt="Aventure"/>
                 </div>
                 <div className="p-col-5">
                         <h3 className="text-center h3 mb-3">Avoir des frissons !</h3>

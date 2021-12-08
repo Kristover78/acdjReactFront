@@ -3,127 +3,148 @@
         "id" : 100,
         "seance": "Vendredi 10 septembre 2021",
         "date": "2021-09-10T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 101,
         "seance": "Vendredi 24 septembre 2021",
         "date": "2021-09-24T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 102,
         "seance": "Samedi 9 octobre 2021",
         "date": "2021-10-09T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 103,
         "seance": "Vendredi 22 octobre 2021",
         "date": "2021-10-22T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 104,
         "seance": "Vendredi 12 novembre 2021",
         "date": "2021-11-12T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 105,
         "seance": "Vendredi 26 novembre 2021",
         "date": "2021-11-26T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 106,
         "seance": "Samedi 11 décembre 2021",
         "date": "2021-12-11T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 107,
         "seance": "Vendredi 17 décembre 2021",
         "date": "2021-12-17T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 108,
         "seance": "Vendredi 7 janvier 2021",
         "date": "2022-01-07T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 109,
         "seance": "Samedi 22 janvier 2022",
         "date": "2022-01-22T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 110,
         "seance": "Vendredi 4 février 2022",
         "date": "2022-02-04T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 111,
         "seance": "Vendredi 18 févier 2022",
         "date": "2022-02-18T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 112,
         "seance": "Vendredi 11 mars 2022",
         "date": "2022-03-11T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 113,
         "seance": "Samedi 26 mars 2022",
         "date": "2022-03-26T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 114,
         "seance": "Vendredi 8 avril 2022",
         "date": "2022-04-08T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 115,
         "seance": "Vendredi 22 avril 2022",
         "date": "2022-04-22T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 116,
         "seance": "Vendredi 13 mai 2022",
         "date": "2022-05-13T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 117,
         "seance": "Vendredi 27 mai 2022",
         "date": "2022-05-27T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 118,
         "seance": "Samedi 11 juin 2022",
         "date": "2022-06-11T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 119,
         "seance": "Vendredi 24 juin 2022",
         "date": "2022-06-24T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     },
     {
         "id" : 120,
         "seance": "Vendredi 1 juillet 2022",
         "date": "2022-07-01T20:00:00.0Z",
-        "status": "Planifiée"
+        "status": "Planifiée",
+        "next" : false
     }
 ]
 }

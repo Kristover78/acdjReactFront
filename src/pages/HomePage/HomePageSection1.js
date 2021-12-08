@@ -8,7 +8,7 @@ const HomePageSection1 = () => {
         <section>
             <div className="p-grid">
                 <div className="p-col-5 p-offset-1">
-                    <Image src={SectionImage} className={"p-shadow-4"} alt="Des compagnons" />
+                    <img src={SectionImage} class="p-shadow-4" alt="Des compagnons" />
                 </div>
                 <div className="p-col-5">
                     <h2>Trouver de nouveaux partenaires</h2>

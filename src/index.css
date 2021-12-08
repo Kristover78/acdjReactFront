@@ -21,3 +21,9 @@ html,body {
 .white-text{
 	color: #FFFFFF;
 }
+.text-center {
+	text-align: center;
+}
+.bold-text{
+	font-weight: bold;
+}

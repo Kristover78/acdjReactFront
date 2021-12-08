@@ -4,7 +4,6 @@ import {Column} from "primereact/column";
 import ACDJNavbar from "../components/ACDJNavbar";
 import ACDJFooter from "../components/ACDJFooter";
 import {getSeancesList} from "../services/Api";
-import './seancesPage.css';
 
 class SeancesPage extends React.Component {
     constructor(props) {
@@ -12,7 +11,7 @@ class SeancesPage extends React.Component {
         this.state = {
             seances: [],
             dataisLoaded: false,
-            selectedSeanceId: null
+            selectedSeance: null
         };
     }
 
@@ -20,7 +19,7 @@ class SeancesPage extends React.Component {
         const seances = getSeancesList();
         for (let item in seances.data) {
             if (item.next){
-                this.setState({selectedSeanceId: item.id});
+                this.setState({selectedSeance: item});
                 break;
             }
         }
@@ -44,7 +43,7 @@ class SeancesPage extends React.Component {
                     <div className="p-col-7 p-offset-2">
                             <h2>Calendrier des séances de jeu</h2>
                             <p>Calendrier pour la saison 2021-2022.</p>
-                        <DataTable value={seances.data} selectionMode="single" selection={this.state.selectedSeanceId} dataKey="id">
+                        <DataTable value={seances.data} selectionMode="single" selection={this.state.selectedSeance} dataKey="id">
                             <Column field="seance" header="Séance" />
                             <Column field="date" header="Date" />
                             <Column field="status" header="Statut" />

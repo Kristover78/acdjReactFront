@@ -13,7 +13,7 @@ const HomePageSection4 = () => {
                         prix à la clef.</p>
                 </div>
                 <div className="p-col-5">
-                    <img src={SectionImage} alt="Tournois" />
+                    <img src={SectionImage} class="p-shadow-4" alt="Tournois" />
                 </div>
             </div>
         </section>

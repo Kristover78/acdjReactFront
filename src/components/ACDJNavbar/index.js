@@ -26,12 +26,12 @@ export class ACDJNavbar extends Component {
       },
       {
         label: 'seances',
-        icon: 'pi pi-info-circle',
+        icon: 'pi pi-calendar',
         command: () => {this.navigateToPage('/seances')}
       },
       {
         label: 'ludotheque',
-        icon: 'pi pi-list',
+        icon: 'pi pi-heart',
         command: () => {this.navigateToPage('/ludotheque')}
       },
       {

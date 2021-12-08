@@ -1,5 +1,7 @@
 .layout-footer {
     background-color: rgb(28, 35, 49);
+    margin-top: 3rem;
+    height: 6rem;
 }
 
 .layout-footer ul {
