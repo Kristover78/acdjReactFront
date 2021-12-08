@@ -35,19 +35,18 @@ class Article extends Component {
     }
 
     getImages(imageRootPath, imageNames){
-        return [DefaultArticleImage];
-        /*if (imageNames === ''){
+        if (imageNames === ''){
             return [DefaultArticleImage];
         }
-        const imagePath = require.context('/assets/img/info/', true);
+        const imagePath = require.context('../../assets/img/info', true);
         let imageNameArray = imageNames.split(',');
 
         let imagesResult = [];
         for(var i = 0; i < imageNameArray.length; i++){
-            let img = imagePath('./' + imageRootPath+ imageNameArray[i]);
-            imagesResult.push(img);
+            let img = imagePath('./' + imageRootPath + imageNameArray[i]);
+            imagesResult.push([img]);
         }
-        return imagesResult;*/
+        return imagesResult;
     }
 
     itemTemplate(item) {
@@ -66,7 +65,8 @@ class Article extends Component {
                 <div className="p-shadow-5 p-mt-5">
                     <div className={"p-grid"}>
                         <div className="p-col-4">
-                            <Image src={DefaultArticleImage} preview className="infoImg" alt="info"/>
+                            <Galleria value={this.getImages(this.props.imgpath, this.props.imgnames)} activeIndex={this.state.activeIndex} responsiveOptions={this.responsiveOptions} numVisible={1}
+                                      item={this.itemTemplate} thumbnail={this.thumbnailTemplate} style={{ maxWidth: '640px' }} />
                         </div>
                         <div className="p-col-8">
                             <h4>{this.props.title}</h4>

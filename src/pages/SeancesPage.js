@@ -17,15 +17,10 @@ class SeancesPage extends React.Component {
 
     componentDidMount() {
         const seances = getSeancesList();
-        for (let item in seances.data) {
-            if (item.next){
-                this.setState({selectedSeance: item});
-                break;
-            }
-        }
         this.setState({
             seances: seances,
-            dataisLoaded: true
+            dataisLoaded: true,
+            selectedSeance: seances.data[seances.current]
         });
     }
 

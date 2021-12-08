@@ -1,3 +1,4 @@
+import seances from "./seancesData.json";
 
 export function getServiceBaseUrl(){
     return 'http://localhost:8082';
@@ -15,21 +16,24 @@ export function getNewsData(){
 
 export function getSeancesList(){
     console.log("API: getSeancesList");
-    const seances = require('./seancesData.json');
+    let seances = require('./seancesData.json');
     let dtNow = new Date();
     let nextFound = false;
+    let cptr = 0;
     seances.data.map((item) => {
         let currentDt = new Date(item.date);
         item.date = currentDt.toLocaleString('fr-FR');
-        item.next = false;
         if (currentDt< dtNow){
             item.status = 'Terminée';
         }
-        if (currentDt > dtNow && !nextFound){
-            item.status = 'Terminée';
-            item.next = true;
+        if (currentDt >= dtNow && !nextFound){
+            seances = {
+                ...seances,
+                current: cptr
+            }
             nextFound = true;
         }
+        cptr ++;
     });
     /*function successCallback(res) {return res.data};
     function failureCallback(){return Promise.resolve(championsTestData)};

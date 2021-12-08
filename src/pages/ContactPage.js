@@ -41,7 +41,7 @@ const ContactPage = () => {
                                             <a href={FicheInscription}><i className="pi pi-file-pdf pdf-file" data-pr-tooltip="Fiche d'Inscription" data-pr-position="right"/></a></p>
                                     </div>
                                     <div className="p-col-6">
-                                        <img src={SectionImage} width={"80%"} className="img-fluid z-depth-1-half" alt=""/>
+                                        <img src={SectionImage} width={"80%"} className="img-fluid z-depth-1-half" alt="People"/>
                                     </div>
                                     <div className="p-col-6">
                                         <div id="map-container" className="z-depth-1-half map-container mb-5">
