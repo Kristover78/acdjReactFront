@@ -39,7 +39,7 @@ class SeancesPage extends React.Component {
             <header>
                 <ACDJNavbar homepage={false} />
             </header>
-            <main style={{ marginTop: '2rem' }}>
+            <main style={{ marginTop: '4rem' }}>
                 <div className="p-grid">
                     <div className="p-col-7 p-offset-2">
                             <h2>Calendrier des séances de jeu</h2>

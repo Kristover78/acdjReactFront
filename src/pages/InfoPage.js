@@ -43,7 +43,7 @@ class InfoPage extends React.Component {
             <header>
                 <ACDJNavbar homepage={false} />
             </header>
-            <main style={{ marginTop: '2rem' }}>
+            <main style={{ marginTop: '4rem' }}>
                 <div className="p-grid">
                     <div className="p-col-6 p-offset-3">
                         <DataView value={articles} layout={"list"} itemTemplate={itemTemplate} />
