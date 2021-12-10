@@ -1,0 +1,23 @@
+.game-container {
+    width: 100%;
+    border: solid #dee2e6;
+    border-width: 0 0 1px 0;
+}
+.img-container {
+    height: 100%;
+}
+.img-list {
+    width: 150px;
+    height: 150px;
+}
+.content-list {
+}
+
+.p-image-preview-container > img  {
+    height: 170px !important;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.game-text {
+    font-size: smaller;
+}

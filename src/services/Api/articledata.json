@@ -1,4 +1,12 @@
 [{
+  "id": 181811,
+  "title": "Développement...",
+  "img_name": "",
+  "img_path" : "",
+  "body": "<p>Quelques semaines à continuer le développement du site... Pour rappel le serveur OVH a cramé au mois de mars 2021, j'ai dû recommencer avec une nlle technologie (react js + docker + microservice) afin d'éviter de me coltiner une réinstallation de serveur + db. Tout passe dans le cloud, c'est la modernité ^^.<p> Merci aux nouvel(le)s adhérent(e)s pour leur cotisation.</p><p>Un tournoi open Res Arcana sera organisé courant janvier 2022. On vous en dira plus prochainement.</p><p>A très bientôt autour d'une table !</p>",
+  "author" : "Christophe",
+  "date": "10/12/2021"
+},{
   "id": 181810,
   "title": "Quelques infos..",
   "img_name": "",

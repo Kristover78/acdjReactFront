@@ -36,8 +36,7 @@ class InfoPage extends React.Component {
 
   render() {
       const { dataisLoaded, articles } = this.state;
-      if (!dataisLoaded) return <div>
-          <h1>Veuillez patienter, chargement... </h1> </div> ;
+      if (!dataisLoaded) return <div><h1>Veuillez patienter, chargement... </h1> </div> ;
     return (
         <div>
             <header>

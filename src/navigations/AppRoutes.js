@@ -9,8 +9,6 @@ import ForumPage from "../pages/ForumPage";
 import MentionsPage from "../pages/MentionsPage";
 import ReleasePage from "../pages/ReleasePage";
 import NotFound from "../components/NotFound";
-import {createStore} from "redux";
-import {createBrowserHistory} from "history";
 
 class AppRoutes extends React.Component {
   render() {

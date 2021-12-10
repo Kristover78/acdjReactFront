@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ACDJNavbar from "../components/ACDJNavbar";
 import ACDJFooter from "../components/ACDJFooter";
 import {Tooltip} from "primereact/tooltip";
@@ -7,16 +7,21 @@ import SectionImage from "../assets/img/imgContacts.jpg";
 import FicheInscription from "../assets/Fiche inscription.pdf";
 import "./ContactPage.css";
 
+const google = window.google;
 const options = {
     center: {lat: 49.005167, lng: 2.113702},
     zoom: 10
 };
-
 const overlays = [
     new google.maps.Marker({position: {lat: 49.005167, lng: 2.113702}, title:"Salle des Maréchaux"})
 ];
 
 const ContactPage = () => {
+
+    useEffect(() => {
+        console.log('Im inside useEffect hook')
+    }, [])
+
     return (
         <div>
             <header>
@@ -30,8 +35,8 @@ const ContactPage = () => {
                                 <div className="p-grid">
                                     <div className="p-col-6">
                                         <Tooltip target=".pdf-file" mouseTrack mouseTrackLeft={10} />
-                                        <p>Si vous êtes intéressé(e) pour découvrir notre activité, vous pouvez vous joindre
-                                            à nous lors de n'importe quelle séance, notre porte vous est grande ouverte.</p>
+                                        <p>Si vous êtes intéressé(e) pour découvrir notre activité, vous pouvez nous rejoindre
+                                            lors de n'importe quelle séance. Notre porte vous est grande ouverte.</p>
                                         <p>Nous nous réunissons tous les 15 jours en alternance sur les vendredis ou samedis
                                             soir, de 20h00 à 23h30 (officiellement ;-) )
                                             dans la salle municipale des Maréchaux. Cf. adresse ci-dessous.</p>

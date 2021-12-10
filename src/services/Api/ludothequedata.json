@@ -3,9 +3,24 @@
     {
       "id": 1,
       "title": "Yedo",
-      "img_name": "/games/yedo.jpg",
-      "description": "<p>Vous êtes un chef de Clan cherchant à accumuler un maximum de Points de Prestige. Vous gagnez ces points en réussissant des crates Mission, en activant des Disciples à certains endroit du plateau de jeu.</p>",
-      "rules": "Christophe"
+      "image": "yedo.jpg",
+      "description": "<p>Vous êtes un chef de Clan cherchant à accumuler un maximum de Points de Prestige. Vous gagnez ces points en réussissant des cartes Mission, en activant des Disciples à certains endroit du plateau de jeu.</p>",
+      "rules": "https://www.ultraboardgames.com/yedo/game-rules.php",
+      "video" : "https://www.youtube.com/watch?v=AhHpJYlhxn8",
+      "public" : true,
+      "nbplayers" : "3-5",
+      "rating" : 3
+    },
+    {
+      "id": 2,
+      "title": "Fleet Commander",
+      "image": "Fleet-Commander-Game.png",
+      "description": "<p>Fleet Commander est un jeu tactique de batailles spatiales avec figurines. Ce jeu a une mécanique de jeu simple et des figurines pré-peintes. Chaque joueur commande une flotte de vaisseaux spatiaux sur un plateau en damier modulable qui peut contenir des terrains comme des champs d’astéroïdes, une colonie ou encore une anomalie noire.</p><p>Au début de son tour, le joueur lance 3 dés parmi ses 9 dés de commandement. Il peut jouer les actions correspondantes aux résultats obtenus ou les conserver sur sa « passerelle » pour les tours suivants. Il existe 3 types de dés ; mouvement, attaque et bouclier. D’une grande simplicité, ce système permet pourtant une profonde réflexion tactique et de beaux retournements de situation.</p>",
+      "rules": "https://cdn.1j1ju.com/medias/04/e0/f5-fleet-commander-ignition-regle.pdf",
+      "video" : "https://www.youtube.com/watch?v=L__hNAe-97s",
+      "public" : true,
+      "nbplayers" : "2-4",
+      "rating" : 3
     }
   ]
 }

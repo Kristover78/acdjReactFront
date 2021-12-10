@@ -32,7 +32,7 @@ const Index = () => {
                                 <p className="white-text">
                                     <strong>
                                         Nous rejoindre si vous habitez aux alentours de Conflans
-                                        Ste Honorine (78700), c'est pouvoir ressortir vos
+                                        Ste Honorine (78700), c&apos;est pouvoir ressortir vos
                                         vieilles boites de l'armoire, car nous seront là pour
                                         les tester :-)
                                     </strong>

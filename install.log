@@ -1,3 +1,5 @@
+pb image : nodes_modules/react-scripts/config/webpack.config.js --> cf. url-loader
+-------------------------------------------
 npm install node-sass --save
 npm install dotenv auth0-js
 npm install axios

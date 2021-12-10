@@ -1,5 +1,3 @@
-import seances from "./seancesData.json";
-
 export function getServiceBaseUrl(){
     return 'http://localhost:8082';
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import {Image} from "primereact/image";
 import SectionImage from '../../assets/img/20160909_214748.jpg';
 import './style.css';
 

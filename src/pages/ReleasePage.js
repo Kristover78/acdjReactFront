@@ -16,7 +16,7 @@ const ReleasePage = () => {
                                 <h2>VERSIONS ET ROADMAP DU SITE</h2>
                                 <h3>Roadmap</h3>
                                 <ol>
-                                    <li>Technique: Migration du site JSF -> React.js (MDB) <span style={{color: "red"}}>(40%)</span></li>
+                                    <li>Technique: Migration du site JSF -&gt; React.js (MDB) <span style={{color: "red"}}>(40%)</span></li>
                                     <li>Technique: Migration en microservice (Rest+Thorntail+Microprofile)</li>
                                         <ul>
                                             <li>Architecture CQRS / Event sourcing <span style={{color: "red"}}>(70%)</span></li>
@@ -24,15 +24,15 @@ const ReleasePage = () => {
                                             <li>UserService (profile)</li>
                                             <li>GameService (gestion ludothèque)</li>
                                         </ul>
-                                    <li>Technique: Migration jdk 8 -> jdk 11</li>
+                                    <li>Technique: Migration jdk 8 -&gt; jdk 11</li>
                                     <li>Technique: Déploiement par conteneurisation (Docker)</li>
                                     <li>Technique: Authentification avec Auth0</li>
                                     <li>Envoi de SMS</li>
                                     <li>Gestionnaire de Tournoi (arbre horizontale + poules)</li>
                                     <li>Gestionnaire de Ligue (ladder)</li>
                                     <li>Organisateur de soirée avec disponibilité des gens (Doodle like)</li>
-                                    <li><span style={{textDecoration: "line-through"}}>Technique: Upgrade Wildfly (10.1.0 -> 15.0.1)</span></li>
-                                    <li><span style={{textDecoration: "line-through"}}>Technique: Upgrade JSF (2.2 -> 2.3)</span></li>
+                                    <li><span style={{textDecoration: "line-through"}}>Technique: Upgrade Wildfly (10.1.0 -&gt; 15.0.1)</span></li>
+                                    <li><span style={{textDecoration: "line-through"}}>Technique: Upgrade JSF (2.2 -&gt; 2.3)</span></li>
                                 </ol>
                                 <h3>Suivi des versions</h3>
                                 <h4>v3.0.0 - 21/03/2020</h4>
@@ -41,7 +41,7 @@ const ReleasePage = () => {
                                 </ul>
                                 <h4>v2.9.1 - 12/11/2019</h4>
                                 <ul>
-                                    <li>Fix: Diverses corrections d'affichage sur Smartphone</li>
+                                    <li>Fix: Diverses corrections d&apos;affichage sur Smartphone</li>
                                 </ul>
                                 <h4>v2.9.0 - 12/08/2019</h4>
                                 <ul>
@@ -52,7 +52,7 @@ const ReleasePage = () => {
                                     <li>Fix: Correction sur la création impossible de jeu dans la Ludothèque.</li>
                                     <li>Fix: Correction sur divers icones (font awesome).</li>
                                     <li>Fix: Correction sur la gestion de la ludothèque.</li>
-                                    <li>New!: Ajout des commentaires sur l'onglet Seance.</li>
+                                    <li>New!: Ajout des commentaires sur l&apos;onglet Seance.</li>
                                 </ul>
                                 <h4>v2.8.1 - 06/02/2019</h4>
                                 <ul>
@@ -63,13 +63,13 @@ const ReleasePage = () => {
                                 </ul>
                                 <h4>v2.8.0 - 31/01/2019</h4>
                                 <ul>
-                                    <li>Fix: Correction d'un problème d'inscription sur la page Keyforge (Compétition)</li>
+                                    <li>Fix: Correction d&apos;un problème d'inscription sur la page Keyforge (Compétition)</li>
                                     <li>Update: Divers améliorations cosmétiques</li>
                                 </ul>
                                 <h4>v2.7.3 - 29/01/2019</h4>
                                 <ul>
                                     <li>Update: changement image background</li>
-                                    <li>Update: Désactivation de l'animation d'hivers (flocons)</li>
+                                    <li>Update: Désactivation de l&apos;animation d'hivers (flocons)</li>
                                     <li>Technique: Versionning Git de toute l'infrastructure</li>
                                 </ul>
                                 <h4>v2.7.2 - 01/12/2018</h4>

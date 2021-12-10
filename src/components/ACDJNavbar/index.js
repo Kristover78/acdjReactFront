@@ -1,15 +1,15 @@
-import React, {Component, useState} from "react";
+import React, {Component} from "react";
 import {Menubar} from "primereact/menubar";
-import {useLocation, withRouter} from 'react-router-dom';
-import {connect} from "react-redux";
-import {showGrowl} from "../../services/redux/actions";
+import {withRouter} from 'react-router-dom';
 import './style.css';
 
 export class ACDJNavbar extends Component {
+  constructor(props) {
+    super(props);
+  }
 
   navigateToPage = (path) => {
-    console.log('Navigate to path ' + path);
-    this.props.history.push(path);
+     this.props.history.push(path);
   }
 
   render() {
@@ -50,10 +50,5 @@ export class ACDJNavbar extends Component {
   }
 }
 
-const mapDispatchToProps = {
-  showGrowl
-};
-
-ACDJNavbar = withRouter(connect(null, mapDispatchToProps)(ACDJNavbar))
-
-export default ACDJNavbar;
+const ACDJNavbarWithRouter = withRouter(ACDJNavbar);
+export default ACDJNavbarWithRouter;
