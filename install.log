@@ -1,21 +1,28 @@
 pb image : nodes_modules/react-scripts/config/webpack.config.js --> cf. url-loader
 -------------------------------------------
+# docker cp abba20e0a29f:/usr/local/apache2/conf/httpd.conf D:/dev/_gitrepos/acdjReactFront/install
+
+
 npm install node-sass --save
 npm install dotenv auth0-js
 npm install axios
 npm install --dev prettier @react-native-community/eslint-config
+docker run -it alpine /bin/sh
 
 # --> ajouter la KEY 'www.au-confluent-des-jeux.fr.key' dans /security avant le build
 cd D:\dev\_gitrepos\acdjReactFront
+npm run build
 docker build -t acdj/front:dev .
-docker run --detach --name acdjfront -v "D:/dev/_gitrepos/acdjReactFront/acdjHome/security:/usr/src/acdj/acdjHome/security" -p 3443:3443 acdj/front:dev
+#docker run --detach --name acdjfront -v "D:/dev/_gitrepos/acdjReactFront/acdjHome/security:/usr/src/acdj/acdjHome/security" -p 3443:3443 acdj/front:dev
+docker run --detach --name acdjfront -p 3443:443 acdj/front:dev
 
 docker container ls
-docker container commit f754ca51b7c6 acdj/front:dev
+docker container commit a65a13a9be29 acdj/front:dev
 docker tag acdj/front:dev actusoft/acdjfront:dev
 docker push actusoft/acdjfront:dev
 
 docker pull actusoft/acdjfront:dev
 docker stop acdjfront
 docker rm acdjfront
-docker run --detach --name acdjfront -v "/home/actusoft/acdjHome/security:/usr/src/acdj/acdjHome/security" -p 3443:3443 actusoft/acdjfront:dev
+#docker run --detach --name acdjfront -v "/home/actusoft/acdjHome/security:/usr/src/acdj/acdjHome/security" -p 3443:3443 actusoft/acdjfront:dev
+docker run --detach --name acdjfront -p 3443:443 actusoft/acdjfront:dev
