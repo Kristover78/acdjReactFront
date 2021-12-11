@@ -18,18 +18,17 @@ const Index = () => {
                 <div className="landing-zone">
                     <div className="p-d-flex p-flex-column p-jc-center maincover">
                             <div className="p-col-5 p-offset-2">
-                                <h1 className="white-text">association
-                                    <div className="font-weight-bold acdj-home-title">au Confluent des{' '}
+                                <h1 className="white-text acdj-home-title">association
+                                    <div className="acdj-home-name">au Confluent des{' '}
                                         <span>J</span>eux</div>
                                 </h1>
-
                                 <hr className="hr-light white-text"/>
-                                <p className="mb-3 white-text">
+                                <p className="mb-3 white-text acdj-description">
                                     <strong>
                                         Jeux de société, de figurine, de carte, tournois,...
                                     </strong>
                                 </p>
-                                <p className="white-text">
+                                <p className="white-text acdj-description">
                                     <strong>
                                         Nous rejoindre si vous habitez aux alentours de Conflans
                                         Ste Honorine (78700), c&apos;est pouvoir ressortir vos

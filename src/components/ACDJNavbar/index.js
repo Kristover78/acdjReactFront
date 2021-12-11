@@ -15,8 +15,8 @@ export class ACDJNavbar extends Component {
   render() {
     const menuItems = [
       {
-        label: <span style={{fontSize: 22}}><strong>aCd<span style={{color: 'orange'}}>J</span></strong></span>,
-        className: 'p-offset-2',
+        label: <span style={{fontSize: 26}}><strong>aCd<span style={{color: 'orange'}}>J</span></strong></span>,
+        className: 'p-offset-2 home-title',
         command: () => {this.navigateToPage('/')}
       },
       {
@@ -25,22 +25,22 @@ export class ACDJNavbar extends Component {
         command: () => {this.navigateToPage('/info')}
       },
       {
-        label: 'seances',
+        label: 'Seances',
         icon: 'pi pi-calendar',
         command: () => {this.navigateToPage('/seances')}
       },
       {
-        label: 'ludotheque',
+        label: 'Ludotheque',
         icon: 'pi pi-heart',
         command: () => {this.navigateToPage('/ludotheque')}
       },
       {
-        label: 'forum',
+        label: 'Forum',
         icon: 'pi pi-discord',
         command: () => {this.navigateToPage('/forum')}
       },
       {
-        label: 'contact',
+        label: 'Contact',
         icon: 'pi pi-globe',
         command: () => {this.navigateToPage('/contact')}
       }

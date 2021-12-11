@@ -13,31 +13,35 @@ const ReleasePage = () => {
                     <section>
                             <div className="p-grid">
                                 <div className="p-offset-2 p-col-8">
-                                <h2>VERSIONS ET ROADMAP DU SITE</h2>
-                                <h3>Roadmap</h3>
+                                <h1>VERSIONS ET ROADMAP DU SITE</h1>
+                                <h2>Roadmap :</h2>
                                 <ol>
-                                    <li>Technique: Migration du site JSF -&gt; React.js (MDB) <span style={{color: "red"}}>(40%)</span></li>
+                                    <li>Technique: Migration du site JSF -&gt; React.js (<strike>MDB</strike> => PrimeReact) <span style={{color: "red"}}>(60%)</span></li>
                                     <li>Technique: Migration en microservice (Rest+Thorntail+Microprofile)</li>
                                         <ul>
-                                            <li>Architecture CQRS / Event sourcing <span style={{color: "red"}}>(70%)</span></li>
-                                            <li>EventService (informations)</li>
-                                            <li>UserService (profile)</li>
-                                            <li>GameService (gestion ludothèque)</li>
+
+                                            <li>UserService (profile) <span style={{color: "red"}}>(50%)</span></li>
+                                            <li>ContentService (informations) <span style={{color: "red"}}>(30%)</span></li>
                                         </ul>
-                                    <li>Technique: Migration jdk 8 -&gt; jdk 11</li>
-                                    <li>Technique: Déploiement par conteneurisation (Docker)</li>
                                     <li>Technique: Authentification avec Auth0</li>
                                     <li>Envoi de SMS</li>
                                     <li>Gestionnaire de Tournoi (arbre horizontale + poules)</li>
                                     <li>Gestionnaire de Ligue (ladder)</li>
                                     <li>Organisateur de soirée avec disponibilité des gens (Doodle like)</li>
+                                    <li>Architecture CQRS / Event sourcing <span style={{color: "red"}}>(100%)</span></li>
+                                    <li>Technique: Déploiement par conteneurisation (Docker) <span style={{color: "red"}}>(100%)</span></li>
+                                    <li>Technique: Migration jdk 8 -&gt; jdk 14 <span style={{color: "red"}}>(100%)</span></li>
                                     <li><span style={{textDecoration: "line-through"}}>Technique: Upgrade Wildfly (10.1.0 -&gt; 15.0.1)</span></li>
                                     <li><span style={{textDecoration: "line-through"}}>Technique: Upgrade JSF (2.2 -&gt; 2.3)</span></li>
                                 </ol>
-                                <h3>Suivi des versions</h3>
-                                <h4>v3.0.0 - 21/03/2020</h4>
+                                <h2>Suivi des versions :</h2>
+                                <h4>v3.1.0 - 11/12/2021</h4>
+                                    <ul>
+                                        <li>Ajout de la page Ludothèque. Actuellement le site est statique. Tous les articles sont hardcodés en attendant la finalisation des microservices.</li>
+                                    </ul>
+                                <h4>v3.0.0 - 21/03/2021</h4>
                                 <ul>
-                                    <li>Réinitialisation du site en React js (MDB) suite à un incendie survenue le 10/03/2020 chez OVH</li>
+                                    <li>Réinitialisation du site en React js (<strike>MDB</strike> => PrimeReact) suite à un incendie survenue le 11/03/2021 chez OVH</li>
                                 </ul>
                                 <h4>v2.9.1 - 12/11/2019</h4>
                                 <ul>

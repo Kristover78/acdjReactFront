@@ -32,9 +32,15 @@ h4 {
     font-size: 3.5rem;
     line-height: 1.2;
 }
+
 .acdj-home-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.acdj-home-name {
     font-family: 'Bangers-Regular', sans-serif;
-    font-weight: 200;
+    font-weight: 700!important;
     text-shadow: 4px 4px 4px #aaa;
     color: darkorchid;
 }
@@ -46,4 +52,7 @@ h4 {
 }
 .fa-ul li {
     margin-bottom: 1.5rem;
+}
+.acdj-description {
+    text-shadow: 4px 4px 4px #1c2331;
 }

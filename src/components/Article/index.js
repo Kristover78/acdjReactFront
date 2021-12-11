@@ -29,7 +29,7 @@ class Article extends Component {
         if (imageNames === ''){
             return [DefaultArticleImage];
         }
-        const imagePath = require.context('../../../public/assets/img/info/', true);
+        const imagePath = require.context('../../assets/img/info/', true);
         let imageNameArray = imageNames.split(',');
         let imagesResult = [];
         for(var i = 0; i < imageNameArray.length; i++){
@@ -75,14 +75,14 @@ class Article extends Component {
                             >
                                 <Dialog header={this.props.title} breakpoints={{'960px': '75vw', '640px': '100vw'}} style={{width: '50vw'}}
                                         onHide={() => this.setState({showGalleria: false})} visible={this.state.showGalleria} dismissableMask={true} maximizable={true}>
-                                    <Galleria value={images} item={this.itemTemplate} showItemNavigators showThumbnails={false} showItemNavigatorsOnHover showIndicators  />
+                                    <Galleria value={images} item={this.itemTemplate} showItemNavigators showThumbnails={false} showItemNavigatorsOnHover showIndicators />
                                 </Dialog>
                             </CSSTransition>
                             </div>
                         </div>
                         <div className="p-col-8">
                             <h4>{this.props.title}</h4>
-                            <div className="p-mr-4">{Parser(this.props.content)}</div>
+                            <div className="p-mr-4 info-text">{Parser(this.props.content)}</div>
                             <p><span style={{ whiteSpace: 'nowrap' }}>par <span className="font-weight-bold">{this.props.author}</span>, {this.props.date}</span></p>
                         </div>
                     </div>

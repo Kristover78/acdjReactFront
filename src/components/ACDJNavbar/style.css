@@ -16,3 +16,6 @@
 .p-menubar .p-menuitem-icon {
     color: #a19e9e !important;
 }
+.home-title .p-menuitem-link {
+    padding: 0.25rem 1.25rem !important;
+}

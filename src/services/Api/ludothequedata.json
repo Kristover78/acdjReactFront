@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Yedo",
       "image": "yedo.jpg",
-      "description": "<p>Vous êtes un chef de Clan cherchant à accumuler un maximum de Points de Prestige. Vous gagnez ces points en réussissant des cartes Mission, en activant des Disciples à certains endroit du plateau de jeu.</p>",
+      "description": "<p>Japon, 1605. Hidetada Tokugawa succède à son père en devenant le nouveau Shogun. Le jeu va se dérouler en 11 tours qui sont subdivisés en 7 phases successives : Phase de préparation ; Phase d'enchères (permet d'acheter aux enchères des \"atouts\". IL y a 7 atouts différents : cartes actions, cartes bonus, armes, nouvelles annexes pour son château, geishas, disciples et cartes missions) ; Phase d'événement ; Phase de programmation (pose d'ouvrier / disciples) ; Phase de patrouille ; Phase de commerce ; Phase d'actions</p><p>",
       "rules": "https://www.ultraboardgames.com/yedo/game-rules.php",
       "video" : "https://www.youtube.com/watch?v=AhHpJYlhxn8",
       "public" : true,
@@ -21,6 +21,51 @@
       "public" : true,
       "nbplayers" : "2-4",
       "rating" : 3
+    },
+    {
+      "id": 3,
+      "title": "Colt Express",
+      "image": "colt-express.jpg",
+      "description": "<p>À la fin du XIX ème siècle, dans l’Ouest américain, les trains sont des cibles convoitées. Hors-la-loi et mercenaires cherchent à dérober les richesses des passagers et les cagnottes fédérale</p><p>la mécaniques de jeu consiste en une programmation en commun: les joueurs planifient leurs mouvements en programmant leurs cartes action sur une pile commune. Puis ensuite on résout chaque carte en dépilant les ordres qui ont été programmés. Les bandits se déplacent d’un wagon à l’autre, ou de l’intérieur d’un wagon vers le toit dans un train en 3D. A tester entre ami pour une bonne partie de plaisir.</p>",
+      "rules": "https://cdn.1j1ju.com/medias/f3/9e/41-colt-express-regle.pdf",
+      "video" : "https://www.youtube.com/watch?v=YtHVz6Tch94",
+      "public" : true,
+      "nbplayers" : "2-6",
+      "rating" : 3
+    },
+    {
+      "id": 4,
+      "title": "Lors of Xidit",
+      "image": "lords-of-xidit.jpg",
+      "description": "<p>Lords of Xidit est un jeu de programmation simultanée où, pour mener à bien vos objectifs, vous devrez planifier vos actions, tout en anticipant celles de vos adversaires. La tension atteindra son apogée en fin de partie, où le système unique de décompte par élimination vous réservera bien des surprises…</p><p>L’ordre aléatoire des 3 critères d’élimination en début de partie, la variation de temps de jeu (9 tours ou 12 tours) et/ou du nombre de joueurs (variante Joueur Neutre), vous permettront d’avoir des options stratégiques toujours différentes, tout comme vos parties.</p>",
+      "rules": "http://jeuxstrategie1.free.fr/jeu_lords_of_xidit/regle.pdf",
+      "video" : "https://www.youtube.com/watch?v=D9PO2TqVtxQ",
+      "public" : true,
+      "nbplayers" : "3-5",
+      "rating" : 3
+    },
+    {
+      "id": 5,
+      "title": "Cyclades",
+      "image": "cyclades.jpg",
+      "description": "<p>Vous êtes le chef d'une cité-état de la Grèce antique et devez vous assurer que votre cité aura la prédominance dans les cyclades. A chaque tour, les joueurs doivent s'attirer la faveur d'un Dieu et d'un seul en enchérissant sur le Dieu de son choix. Mais les joueurs enchérissent entre eux et se chassent mutuellement des dieux qui n'acceptent qu'un seul prétendant. Au final chaque joueur aura réussi à conserver un dieu pour la suite du jeu.</p><p>Les Dieux permettent au joueur de faire des actions spécifiques : Zeus permet de recruter des prêtres et de construire des temples ; Athéna permet de recruter des philosophes et de construire des universités ; Poséidon permet de construire des flottes de guerre, de les déplacer et de construire des ports ; Arès permet de recruter des troupes, de les déplacer et de construire des forteresses ; Enfin Apollon permet de gagner des pièces d'or. L'objectif sera de construire 2 cités sur l'ensemble des iles des Cyclades.</p>",
+      "rules": "https://www.matagot.com/docs/CYCLADES_REGLES.pdf",
+      "video" : "https://www.youtube.com/watch?v=pmBtfqmOHtI",
+      "public" : true,
+      "nbplayers" : "2-5",
+      "rating" : 4
+    },
+    {
+      "id": 6,
+      "title": "Tikal",
+      "image": "tikal.jpg",
+      "description": "<p>Tikal était la capitale d’un des plus puissants royaumes de l’époque Maya et est un des plus grands sites archéologiques d’Amérique du Sud. Vous menez une équipe d’aventuriers à la recherche des trésors d’une civilisation perdue.</p><p>Vous disposez d’un nombre limité de points d’action par tour pour mener votre équipe à travers la jungle et découvrir des temples, trouver des trésors, établir des campements ... Mais le site est convoité, et la concurrence sera rude !</p>",
+      "rules": "https://www.jeuxavolonte.asso.fr/regles/tikal.pdf",
+      "video" : "https://www.youtube.com/watch?v=JBTb8M9vbO8",
+      "public" : true,
+      "nbplayers" : "2-4",
+      "rating" : 3
     }
   ]
 }
+
