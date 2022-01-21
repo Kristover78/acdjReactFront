@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import Parser from "html-react-parser";
 import {Rating} from "primereact/rating";
 import {Tooltip} from "primereact/tooltip";
-import "./style.css";
 
 class GameListItem extends Component {
     constructor(props) {

@@ -1,11 +1,10 @@
 import React, {Component} from "react";
-import ACDJNavbar from "../components/ACDJNavbar";
-import ACDJFooter from "../components/ACDJFooter";
+import ACDJNavbar from "../components/acdjNavbar";
+import ACDJFooter from "../components/acdjFooter";
 import {Tooltip} from "primereact/tooltip";
 import {GMap} from "primereact/gmap";
 import SectionImage from "../assets/img/imgContacts.jpg";
 import FicheInscription from "../assets/Fiche inscription.pdf";
-import "./ContactPage.css";
 
 const google = window.google;
 const options = {

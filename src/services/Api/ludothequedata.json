@@ -65,7 +65,28 @@
       "public" : true,
       "nbplayers" : "2-4",
       "rating" : 3
+    },
+    {
+      "id": 7,
+      "title": "Serenissima",
+      "image": "serenissima.jpg",
+      "description": "<p>Serenissima est une ré-édition du fameux Méditerranée. Le choix du nombre de marins par galère est un des choix importants dans Serenissima car ce nombre influence le nombre de cases de déplacement et le nombre de dés lancés lors des combats.  Mais en contrepartie, vous aurez moins de place pour transporter des marchandises afin de les vendre.</p><p>Serenissima est donc du même gabarit que son ancêtre mais aura tendance à offrir plus de combats et donc moins de commerce.</p>",
+      "rules": "http://www.ystari.com/serenissima/serfr.pdf",
+      "video" : "https://www.youtube.com/watch?v=7hKrLu_O7uY",
+      "public" : true,
+      "nbplayers" : "2-4",
+      "rating" : 2
+    },
+    {
+      "id": 8,
+      "title": "Innovation",
+      "image": "innovation.jpg",
+      "description": "<p>Innovation repose sur les cartes Innovation qui représentent autant d'inventions décisives de notre Histoire. Ces cartes de cinq couleurs différentes permettent aux joueurs de produire des Ressources. Au cours de la partie, chaque joueur devra les empiler selon leur couleur. Toutes possèdent un ou plusieurs Dogmes. Il existe deux types de Dogmes : les Dogmes Coopératifs, qui bénéficient aux adversaires ayant autant ou plus de Ressources que le joueur, et les Dogmes de Suprématie qui lui permettent d'imposer sa volonté à ses adversaires ayant moins de Ressources que lui. A son tour, le joueur dispose de deux actions parmi piocher, poser une carte en jeu, activer un Dogme et dominer une Période. La suite ?! et bien mettons nous autour d'une table :-)</p>",
+      "rules": "https://www.iello.fr/regles/Innovation_regles.pdf",
+      "video" : "https://www.youtube.com/watch?v=WgozLOqmIls",
+      "public" : true,
+      "nbplayers" : "2-4",
+      "rating" : 3
     }
   ]
 }
-

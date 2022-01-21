@@ -1,12 +1,11 @@
 import React from "react";
 import {DataView} from "primereact/dataview";
-import ACDJNavbar from "../../components/ACDJNavbar";
-import ACDJFooter from "../../components/ACDJFooter";
+import ACDJNavbar from "../../components/acdjNavbar";
+import ACDJFooter from "../../components/acdjFooter";
 import {getLudothequeData} from "../../services/Api";
 import GameListItem from "./GameListItem";
 import LudothequeImg from "../../assets/img/armoire_a_jeu.jpg"
 import {Image} from "primereact/image";
-import "./style.css";
 
 const itemTemplate = (item) => {
     return (

@@ -4,7 +4,6 @@ import DefaultArticleImage from "../../assets/img/infoDefault.jpg";
 import {CSSTransition} from "primereact/csstransition";
 import {Galleria} from "primereact/galleria";
 import {Dialog} from "primereact/dialog";
-import "./style.css";
 
 class Article extends Component {
 

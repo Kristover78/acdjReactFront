@@ -7,10 +7,7 @@ import {createStore} from "redux";
 import {Provider} from "react-redux";
 import AppRoutes from "../../navigations/AppRoutes";
 import appReducers from '../../services/redux/reducers.js'
-import 'primereact/resources/themes/lara-light-indigo/theme.css';
-import 'primereact/resources/primereact.min.css';
-import 'primeicons/primeicons.css';
-import 'primeflex/primeflex.css';
+import '../../assets/scss/main.scss';
 
 //import Auth from './Auth';
 //const auth = new Auth();

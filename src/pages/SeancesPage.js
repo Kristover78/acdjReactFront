@@ -1,8 +1,8 @@
 import React from "react";
 import {DataTable} from "primereact/datatable";
 import {Column} from "primereact/column";
-import ACDJNavbar from "../components/ACDJNavbar";
-import ACDJFooter from "../components/ACDJFooter";
+import ACDJNavbar from "../components/acdjNavbar";
+import ACDJFooter from "../components/acdjFooter";
 import {getSeancesList} from "../services/Api";
 
 class SeancesPage extends React.Component {

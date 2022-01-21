@@ -1,6 +1,6 @@
 import React from "react";
-import ACDJNavbar from "../components/ACDJNavbar";
-import ACDJFooter from "../components/ACDJFooter";
+import ACDJNavbar from "../components/acdjNavbar";
+import ACDJFooter from "../components/acdjFooter";
 
 const ForumPage = () => {
     return (

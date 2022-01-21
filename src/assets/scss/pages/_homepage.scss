@@ -1,0 +1,85 @@
+.landing-zone{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../../img/20170106_213000.jpg');
+    @media only screen and (max-device-width: 425px) {
+        background-image: url('../../img/media-sm/20170106_213000.jpg');
+    }
+}
+
+.maincover {
+    height: 100%;
+}
+.pink-text{
+    color: #e91e63;
+}
+.cyan-text{
+    color: #00bcd4;
+}
+.green-text {
+    color: #4caf50;
+}
+.sections img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    @media only screen and (max-device-width: $md) {
+        font-size: 1.2rem;
+    }
+    @media only screen and (max-device-width: $sm) {
+        font-size: 1.0rem;
+    }
+}
+.main-title {
+    font-weight: 300;
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+.acdj-home-title {
+    font-family: 'Bangers-Regular', sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
+    color:darkmagenta;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    .j-color {
+        color: $j-color;
+    }
+    @media only screen and (max-device-width: $md) {
+        font-size: 3.0rem;
+    }
+    @media only screen and (max-device-width: $sm) {
+        font-size: 2.0rem;
+    }
+}
+.acdj-home-title span {
+    color: darkmagenta;
+}
+.ulawesome {
+    width: 1.3em;
+    @media only screen and (max-device-width: $md) {
+        width: 1.1rem;
+    }
+    @media only screen and (max-device-width: $sm) {
+        width: 0.9rem;
+    }
+}
+.fa-ul li {
+    margin-bottom: 1.5rem;
+    @media only screen and (max-device-width: $md) {
+        margin-bottom: 1.3rem;
+    }
+    @media only screen and (max-device-width: $sm) {
+        margin-bottom: 1.1rem;
+    }
+}
+.acdj-description {
+    text-shadow: 4px 4px 4px #1c2331;
+}

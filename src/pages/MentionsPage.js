@@ -1,7 +1,6 @@
 import React from "react";
-import ACDJNavbar from "../components/ACDJNavbar";
-import ACDJFooter from "../components/ACDJFooter";
-import '../assets/css/MentionsStyle.css';
+import ACDJNavbar from "../components/acdjNavbar";
+import ACDJFooter from "../components/acdjFooter";
 
 const MentionsPage = () => {
     return (
