@@ -1,4 +1,3 @@
-
 export function getServiceBaseUrl(){
     return 'http://localhost:8082';
 }
@@ -15,11 +14,30 @@ export function getNewsData(){
 
 export function getSeancesList(){
     console.log("API: getSeancesList");
-    const seances = require('./seancesData.json');
+    let seances = require('./seancesData.json');
+    let dtNow = new Date();
+    let nextFound = false;
+    let cptr = 0;
+    seances.data.map((item) => {
+        let currentDt = new Date(item.date);
+        item.date = currentDt.toLocaleString('fr-FR');
+        if (currentDt< dtNow){
+            item.status = 'Terminée';
+        }
+        if (currentDt >= dtNow && !nextFound){
+            seances = {
+                ...seances,
+                current: cptr
+            }
+            nextFound = true;
+        }
+        cptr ++;
+    });
     /*function successCallback(res) {return res.data};
     function failureCallback(){return Promise.resolve(championsTestData)};
     return axios.get(getServiceBaseUrl()+'/api/public/card/champion/all')
         .then(successCallback, failureCallback);*/
+    //return fetch('data/products.json').then(res => res.json()).then(d => d.data);
     return seances;
 }
 

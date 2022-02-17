@@ -1,8 +1,8 @@
 import React from "react";
-import ACDJNavbar from "../components/ACDJNavbar";
-import ACDJFooter from "../components/ACDJFooter";
-import {MDBCol, MDBContainer, MDBRow, MDBTable, MDBTableBody, MDBTableHead} from "mdbreact";
-import './seancesPage.css';
+import {DataTable} from "primereact/datatable";
+import {Column} from "primereact/column";
+import ACDJNavbar from "../components/acdjNavbar";
+import ACDJFooter from "../components/acdjFooter";
 import {getSeancesList} from "../services/Api";
 
 class SeancesPage extends React.Component {
@@ -10,39 +10,41 @@ class SeancesPage extends React.Component {
         super(props);
         this.state = {
             seances: [],
-            dataisLoaded: false
+            dataisLoaded: false,
+            selectedSeance: null
         };
     }
 
     componentDidMount() {
-        const data = getSeancesList();
+        const seances = getSeancesList();
         this.setState({
-            seances: data,
-            dataisLoaded: true
+            seances: seances,
+            dataisLoaded: true,
+            selectedSeance: seances.data[seances.current]
         });
     }
 
   render() {
       const { dataisLoaded, seances } = this.state;
-      if (!dataisLoaded) return <div>
-          <h1>Veuillez patienter, chargement... </h1> </div> ;
-    return (
+      if (!dataisLoaded)
+          return (<div><h1>Veuillez patienter, chargement... </h1> </div>);
+      return (
         <div>
             <header>
                 <ACDJNavbar homepage={false} />
             </header>
-            <main style={{ marginTop: '5rem' }}>
-                <MDBContainer>
-                    <MDBRow>
-                        <MDBCol size={10}>
-                            <h2>Calendrier des séances de jeu</h2>
-                            <p>Calendrier pour la saison 2021-2022.</p>
-                            <MDBTable responsive striped className={"testtable"}>
-                                <MDBTableHead columns={seances.columns} />
-                                <MDBTableBody rows={seances.rows} />
-                            </MDBTable>
-                        </MDBCol></MDBRow>
-                </MDBContainer>
+            <main style={{ marginTop: '4rem' }}>
+                <div className="p-grid">
+                    <div className="p-col-12 p-sm-offset-1 p-sm-10 p-md-offset-2 p-md-8 p-lg-offset-3 p-lg-6">
+                        <h2 className="text-center mb-3">Calendrier des séances de jeu</h2>
+                        <p>Calendrier pour la saison 2021-2022.</p>
+                        <DataTable value={seances.data} selectionMode="single" selection={this.state.selectedSeance} dataKey="id" responsiveLayout="scroll">
+                            <Column field="seance" header="Séance" />
+                            <Column field="date" header="Date" />
+                            <Column field="status" header="Statut" />
+                        </DataTable>
+                    </div>
+                </div>
             </main>
             <footer>
                 <ACDJFooter/>

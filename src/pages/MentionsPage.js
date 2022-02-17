@@ -1,11 +1,6 @@
 import React from "react";
-import {
-    MDBCol, MDBContainer,
-    MDBRow,
-} from 'mdbreact';
-import ACDJNavbar from "../components/ACDJNavbar";
-import ACDJFooter from "../components/ACDJFooter";
-import '../assets/css/MentionsStyle.css';
+import ACDJNavbar from "../components/acdjNavbar";
+import ACDJFooter from "../components/acdjFooter";
 
 const MentionsPage = () => {
     return (
@@ -14,11 +9,10 @@ const MentionsPage = () => {
                 <ACDJNavbar homepage={false}/>
             </header>
             <main style={{ marginTop: '5rem' }}>
-                <MDBContainer>
-                    <p>Mentions Légales et Charte de Protection des Donnés Personnelles...</p>
-                    <section className="mt-5 wow fadeIn">
-                        <MDBRow>
-                            <MDBCol md="8" className="mb-4 offset-md-2">
+                        <section>
+                            <div className="p-grid">
+                                <div className="p-offset-2 p-col-8">
+                                    <p>Mentions Légales et Charte de Protection des Donnés Personnelles...</p>
                                 <div className="mentions-legales">
                                     <h1>MENTIONS LÉGALES</h1>
                                     <ul>
@@ -330,12 +324,12 @@ const MentionsPage = () => {
                                     <p>Les Données collectées dans le cadre d'une inscription pour une saison de jeu
                                         sont collectées dans un fichier Excel situé sur le compte Dropbox partagé par le
                                         président, le secrétaire et le trésorier.</p>
-
                                 </div>
-                            </MDBCol>
-                        </MDBRow>
+                                    <div>Si tu es arrivé à lire jusqu'içi c'est que tu es un champion !! :-D<br />
+                                        Alors vient nous rejoindre pour qu'on se batte autour d'un plateau de jeu ;-)</div>
+                                </div>
+                            </div>
                     </section>
-                </MDBContainer>
             </main>
             <footer>
                 <ACDJFooter/>

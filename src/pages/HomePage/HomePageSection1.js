@@ -1,18 +1,16 @@
 import React from "react";
-import {MDBCol, MDBRow, MDBAnimation} from "mdbreact";
 import SectionImage from '../../assets/img/20160909_214748.jpg';
+import {Image} from "primereact/image";
 
 const HomePageSection1 = () => {
     return (
-        <section className="mt-5 wow fadeIn">
-            <MDBRow>
-                <MDBCol md="6" className="mb-4">
-                    <MDBAnimation reveal type='fadeIn'>
-                        <img src={SectionImage} className="img-fluid z-depth-1-half" alt=""/>
-                    </MDBAnimation>
-                </MDBCol>
-                <div className="col-md-6 mb-4">
-                    <h3 className="text-center h3 mb-3">Trouver de nouveaux partenaires</h3>
+        <section>
+            <div className="p-grid">
+                <div className="p-col-12 p-md-4">
+                    <Image src={SectionImage} preview={true} width="90%" alt="Des compagnons" />
+                </div>
+                <div className="p-col-12 p-md-8">
+                    <h2>Trouver de nouveaux partenaires</h2>
                     <p>Vous en avez marre de tourner en rond..., envie de <strong>nouveaux
                         partenaires</strong> de jeu ? de découvrir des <strong>nouvelles
                         stratégies</strong> auxquelles vous n'auriez même pas pensé ?</p>
@@ -22,7 +20,7 @@ const HomePageSection1 = () => {
                         C'est l'occasion aussi de faire de nouvelles belles <strong>rencontres</strong>.
                     </p>
                 </div>
-            </MDBRow>
+            </div>
         </section>
     )
 }

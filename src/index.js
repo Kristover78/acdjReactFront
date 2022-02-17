@@ -1,11 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "bootstrap-css-only/css/bootstrap.min.css";
-import "mdbreact/dist/css/mdb.css";
-import "./index.css";
-import "./lightbox.css";
 import App from "./components/App";
+import "./index.css";
+window.React = React;
 /*import {Cookify} from './assets/js/cookify.js'*/
 /*
 use of Material Design for Bootstrap (Free) & EBM Bootstrap Plugin, is under MIT License :
@@ -17,7 +14,6 @@ modify, merge, publish, distribute, sublicense, and/or sell copies of the Softwa
 is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
-import registerServiceWorker from './registerServiceWorker';
 /*
 window.top.cookify = new Cookify({
     'init': {
@@ -50,4 +46,4 @@ window.top.cookify = new Cookify({
 });*/
 ReactDOM.render( <App /> , document.getElementById('root'));
 
-registerServiceWorker();
+//registerServiceWorker();

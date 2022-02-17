@@ -1,7 +1,13 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router} from 'react-router-dom';
-import Routes from "../../navigations/Routes";
+
 import {CookiesProvider} from "react-cookie";
+import {createBrowserHistory} from "history";
+import {Router} from "react-router-dom";
+import {createStore} from "redux";
+import {Provider} from "react-redux";
+import AppRoutes from "../../navigations/AppRoutes";
+import appReducers from '../../services/redux/reducers.js'
+import '../../assets/scss/main.scss';
 
 //import Auth from './Auth';
 //const auth = new Auth();
@@ -9,19 +15,20 @@ import {CookiesProvider} from "react-cookie";
 // https://auth0.com/blog/react-tutorial-building-and-securing-your-first-app/
 
 class Index extends Component {
-  state = {
-    collapseID: ''
-  };
+    render() {
+        let History = createBrowserHistory();
+        let store = createStore(appReducers);
 
-  render() {
-    return (
-        <CookiesProvider>
-            <Router>
-                <Routes/>
-            </Router>
-        </CookiesProvider>
-    );
-  }
+        return (
+            <Provider store={store}>
+                <CookiesProvider>
+                    <Router history={History}>
+                        <AppRoutes/>
+                    </Router>
+                </CookiesProvider>
+            </Provider>
+        );
+    }
 }
 
 export default Index;

@@ -1,30 +1,92 @@
-{"columns" : [
-    {
-      "label" : "Titre",
-      "field" : "title"
-    },
-    {
-      "label": "Boite",
-      "field": "image"
-    },
-    {
-      "label": "Description",
-      "field": "description"
-    },
-    {
-    "label": "Détail",
-    "field": "detail"
-  }
-  ],
-  "rows" : [
+{
+  "data": [
     {
       "id": 1,
       "title": "Yedo",
       "image": "yedo.jpg",
-      "description": "Vous êtes un chef de Clan cherchant à accumuler un maximum de Points de Prestige. Vous gagnez ces points en réussissant des crates Mission, en activant des Disciples à certains endroit du plateau de jeu.",
-      "rules": "Christophe",
-      "video": "Christophe",
-      "detail" : ""
+      "description": "<p>Japon, 1605. Hidetada Tokugawa succède à son père en devenant le nouveau Shogun. Le jeu va se dérouler en 11 tours qui sont subdivisés en 7 phases successives : Phase de préparation ; Phase d'enchères (permet d'acheter aux enchères des \"atouts\". IL y a 7 atouts différents : cartes actions, cartes bonus, armes, nouvelles annexes pour son château, geishas, disciples et cartes missions) ; Phase d'événement ; Phase de programmation (pose d'ouvrier / disciples) ; Phase de patrouille ; Phase de commerce ; Phase d'actions</p><p>",
+      "rules": "https://www.ultraboardgames.com/yedo/game-rules.php",
+      "video" : "https://www.youtube.com/watch?v=AhHpJYlhxn8",
+      "public" : true,
+      "nbplayers" : "3-5",
+      "rating" : 3
+    },
+    {
+      "id": 2,
+      "title": "Fleet Commander",
+      "image": "Fleet-Commander-Game.png",
+      "description": "<p>Fleet Commander est un jeu tactique de batailles spatiales avec figurines. Ce jeu a une mécanique de jeu simple et des figurines pré-peintes. Chaque joueur commande une flotte de vaisseaux spatiaux sur un plateau en damier modulable qui peut contenir des terrains comme des champs d’astéroïdes, une colonie ou encore une anomalie noire.</p><p>Au début de son tour, le joueur lance 3 dés parmi ses 9 dés de commandement. Il peut jouer les actions correspondantes aux résultats obtenus ou les conserver sur sa « passerelle » pour les tours suivants. Il existe 3 types de dés ; mouvement, attaque et bouclier. D’une grande simplicité, ce système permet pourtant une profonde réflexion tactique et de beaux retournements de situation.</p>",
+      "rules": "https://cdn.1j1ju.com/medias/04/e0/f5-fleet-commander-ignition-regle.pdf",
+      "video" : "https://www.youtube.com/watch?v=L__hNAe-97s",
+      "public" : true,
+      "nbplayers" : "2-4",
+      "rating" : 3
+    },
+    {
+      "id": 3,
+      "title": "Colt Express",
+      "image": "colt-express.jpg",
+      "description": "<p>À la fin du XIX ème siècle, dans l’Ouest américain, les trains sont des cibles convoitées. Hors-la-loi et mercenaires cherchent à dérober les richesses des passagers et les cagnottes fédérale</p><p>la mécaniques de jeu consiste en une programmation en commun: les joueurs planifient leurs mouvements en programmant leurs cartes action sur une pile commune. Puis ensuite on résout chaque carte en dépilant les ordres qui ont été programmés. Les bandits se déplacent d’un wagon à l’autre, ou de l’intérieur d’un wagon vers le toit dans un train en 3D. A tester entre ami pour une bonne partie de plaisir.</p>",
+      "rules": "https://cdn.1j1ju.com/medias/f3/9e/41-colt-express-regle.pdf",
+      "video" : "https://www.youtube.com/watch?v=YtHVz6Tch94",
+      "public" : true,
+      "nbplayers" : "2-6",
+      "rating" : 3
+    },
+    {
+      "id": 4,
+      "title": "Lors of Xidit",
+      "image": "lords-of-xidit.jpg",
+      "description": "<p>Lords of Xidit est un jeu de programmation simultanée où, pour mener à bien vos objectifs, vous devrez planifier vos actions, tout en anticipant celles de vos adversaires. La tension atteindra son apogée en fin de partie, où le système unique de décompte par élimination vous réservera bien des surprises…</p><p>L’ordre aléatoire des 3 critères d’élimination en début de partie, la variation de temps de jeu (9 tours ou 12 tours) et/ou du nombre de joueurs (variante Joueur Neutre), vous permettront d’avoir des options stratégiques toujours différentes, tout comme vos parties.</p>",
+      "rules": "http://jeuxstrategie1.free.fr/jeu_lords_of_xidit/regle.pdf",
+      "video" : "https://www.youtube.com/watch?v=D9PO2TqVtxQ",
+      "public" : true,
+      "nbplayers" : "3-5",
+      "rating" : 3
+    },
+    {
+      "id": 5,
+      "title": "Cyclades",
+      "image": "cyclades.jpg",
+      "description": "<p>Vous êtes le chef d'une cité-état de la Grèce antique et devez vous assurer que votre cité aura la prédominance dans les cyclades. A chaque tour, les joueurs doivent s'attirer la faveur d'un Dieu et d'un seul en enchérissant sur le Dieu de son choix. Mais les joueurs enchérissent entre eux et se chassent mutuellement des dieux qui n'acceptent qu'un seul prétendant. Au final chaque joueur aura réussi à conserver un dieu pour la suite du jeu.</p><p>Les Dieux permettent au joueur de faire des actions spécifiques : Zeus permet de recruter des prêtres et de construire des temples ; Athéna permet de recruter des philosophes et de construire des universités ; Poséidon permet de construire des flottes de guerre, de les déplacer et de construire des ports ; Arès permet de recruter des troupes, de les déplacer et de construire des forteresses ; Enfin Apollon permet de gagner des pièces d'or. L'objectif sera de construire 2 cités sur l'ensemble des iles des Cyclades.</p>",
+      "rules": "https://www.matagot.com/docs/CYCLADES_REGLES.pdf",
+      "video" : "https://www.youtube.com/watch?v=pmBtfqmOHtI",
+      "public" : true,
+      "nbplayers" : "2-5",
+      "rating" : 4
+    },
+    {
+      "id": 6,
+      "title": "Tikal",
+      "image": "tikal.jpg",
+      "description": "<p>Tikal était la capitale d’un des plus puissants royaumes de l’époque Maya et est un des plus grands sites archéologiques d’Amérique du Sud. Vous menez une équipe d’aventuriers à la recherche des trésors d’une civilisation perdue.</p><p>Vous disposez d’un nombre limité de points d’action par tour pour mener votre équipe à travers la jungle et découvrir des temples, trouver des trésors, établir des campements ... Mais le site est convoité, et la concurrence sera rude !</p>",
+      "rules": "https://www.jeuxavolonte.asso.fr/regles/tikal.pdf",
+      "video" : "https://www.youtube.com/watch?v=JBTb8M9vbO8",
+      "public" : true,
+      "nbplayers" : "2-4",
+      "rating" : 3
+    },
+    {
+      "id": 7,
+      "title": "Serenissima",
+      "image": "serenissima.jpg",
+      "description": "<p>Serenissima est une ré-édition du fameux Méditerranée. Le choix du nombre de marins par galère est un des choix importants dans Serenissima car ce nombre influence le nombre de cases de déplacement et le nombre de dés lancés lors des combats.  Mais en contrepartie, vous aurez moins de place pour transporter des marchandises afin de les vendre.</p><p>Serenissima est donc du même gabarit que son ancêtre mais aura tendance à offrir plus de combats et donc moins de commerce.</p>",
+      "rules": "http://www.ystari.com/serenissima/serfr.pdf",
+      "video" : "https://www.youtube.com/watch?v=7hKrLu_O7uY",
+      "public" : true,
+      "nbplayers" : "2-4",
+      "rating" : 2
+    },
+    {
+      "id": 8,
+      "title": "Innovation",
+      "image": "innovation.jpg",
+      "description": "<p>Innovation repose sur les cartes Innovation qui représentent autant d'inventions décisives de notre Histoire. Ces cartes de cinq couleurs différentes permettent aux joueurs de produire des Ressources. Au cours de la partie, chaque joueur devra les empiler selon leur couleur. Toutes possèdent un ou plusieurs Dogmes. Il existe deux types de Dogmes : les Dogmes Coopératifs, qui bénéficient aux adversaires ayant autant ou plus de Ressources que le joueur, et les Dogmes de Suprématie qui lui permettent d'imposer sa volonté à ses adversaires ayant moins de Ressources que lui. A son tour, le joueur dispose de deux actions parmi piocher, poser une carte en jeu, activer un Dogme et dominer une Période. La suite ?! et bien mettons nous autour d'une table :-)</p>",
+      "rules": "https://www.iello.fr/regles/Innovation_regles.pdf",
+      "video" : "https://www.youtube.com/watch?v=WgozLOqmIls",
+      "public" : true,
+      "nbplayers" : "2-4",
+      "rating" : 3
     }
   ]
 }
