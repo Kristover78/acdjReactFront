@@ -28,11 +28,11 @@ class ContactPage extends Component {
                 </header>
                 <main style={{marginTop: '4rem'}}>
                     <div className="p-grid">
-                        <div className="p-offset-2 p-col-8">
+                        <div className="p-col-12 p-sm-offset-1 p-sm-10 p-md-offset-2 p-md-8 p-lg-offset-3 p-lg-6">
                             <h2 className="text-center mb-3">Contact</h2>
                             <section>
                                 <div className="p-grid">
-                                    <div className="p-col-6">
+                                    <div className="p-col-12 p-md-6">
                                         <Tooltip target=".pdf-file" mouseTrack mouseTrackLeft={10}/>
                                         <p>Si vous êtes intéressé(e) pour découvrir notre activité, vous pouvez nous
                                             rejoindre
@@ -49,24 +49,21 @@ class ContactPage extends Component {
                                                                           data-pr-tooltip="Fiche d'Inscription"
                                                                           data-pr-position="right"/></a></p>
                                     </div>
-                                    <div className="p-col-6">
-                                        <img src={SectionImage} width={"80%"} className="img-fluid z-depth-1-half"
-                                             alt="People"/>
+                                    <div className="p-col-12 p-md-6">
+                                        <img src={SectionImage} width="100%" className="p-shadow-4" alt="People"/>
                                     </div>
-                                    <div className="p-col-6">
-                                        <div id="map-container" className="z-depth-1-half map-container mb-5">
-                                            <GMap overlays={overlays} options={options}
-                                                  style={{width: '100%', minHeight: '320px'}}/>
+                                    <div className="p-col-12 p-md-6">
+                                        <div className="p-text-center p-mb-5"><span className="bold-text">Salle des Maréchaux<br/>
+                                            5, Résidence Les Maréchaux<br/>
+                                            78700 Conflans Ste Honorine<br/>
+                                                (Près du marché de Chennevières)</span><br /><br />
+                                            <a href="mailto:contact@au-confluent-des-jeux.fr">Contacter l'association</a>
                                         </div>
                                     </div>
-                                    <div className="p-col-6 text-center">
-                                        <div className={"p-mb-5"}><span className="bold-text">Salle des Maréchaux<br/>
-                                        5, Résidence Les Maréchaux<br/>
-                                        78700 Conflans Ste Honorine<br/>
-                                            (Près du marché de Chennevières)</span></div>
-
-                                        <div><a href="mailto:contact@au-confluent-des-jeux.fr">Contacter
-                                            l'association</a></div>
+                                    <div className="p-col-12 p-md-6">
+                                        <div id="map-container" className="p-shadow-4 map-container mb-5">
+                                            <GMap overlays={overlays} options={options} style={{width: '100%', minHeight: '320px'}}/>
+                                        </div>
                                     </div>
                                 </div>
                             </section>

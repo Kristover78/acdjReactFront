@@ -35,10 +35,10 @@ class SeancesPage extends React.Component {
             </header>
             <main style={{ marginTop: '4rem' }}>
                 <div className="p-grid">
-                    <div className="p-col-7 p-offset-2">
-                            <h2>Calendrier des séances de jeu</h2>
-                            <p>Calendrier pour la saison 2021-2022.</p>
-                        <DataTable value={seances.data} selectionMode="single" selection={this.state.selectedSeance} dataKey="id">
+                    <div className="p-col-12 p-sm-offset-1 p-sm-10 p-md-offset-2 p-md-8 p-lg-offset-3 p-lg-6">
+                        <h2 className="text-center mb-3">Calendrier des séances de jeu</h2>
+                        <p>Calendrier pour la saison 2021-2022.</p>
+                        <DataTable value={seances.data} selectionMode="single" selection={this.state.selectedSeance} dataKey="id" responsiveLayout="scroll">
                             <Column field="seance" header="Séance" />
                             <Column field="date" header="Date" />
                             <Column field="status" header="Statut" />

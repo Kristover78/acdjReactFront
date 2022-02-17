@@ -45,7 +45,7 @@ export class ACDJNavbar extends Component {
       }
     ]
 
-    return <Menubar model={menuItems} />;
+    return menuItems && <Menubar model={menuItems} />;
   }
 }
 

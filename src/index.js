@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
 import "./index.css";
+window.React = React;
 /*import {Cookify} from './assets/js/cookify.js'*/
 /*
 use of Material Design for Bootstrap (Free) & EBM Bootstrap Plugin, is under MIT License :

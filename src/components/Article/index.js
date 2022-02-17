@@ -58,8 +58,8 @@ class Article extends Component {
         return (
             <article>
                 <div className="p-shadow-5 p-mt-5">
-                    <div className={"p-grid"}>
-                        <div className="p-col-4">
+                    <div className="p-grid">
+                        <div className="p-sm-12 p-md-4">
                             <div className="p-d-flex" style={{height: '100%'}}>
                             { this.state.showImage &&
                             <div className="p-as-center"><img src={images[0]} onClick={() => this.setState({showGalleria:true})} alt="info" className="infoImg p-shadow-4"/></div>
@@ -79,9 +79,9 @@ class Article extends Component {
                             </CSSTransition>
                             </div>
                         </div>
-                        <div className="p-col-8">
+                        <div className="p-sm-12 p-md-8">
                             <h4>{this.props.title}</h4>
-                            <div className="p-mr-4 info-text">{Parser(this.props.content)}</div>
+                            <div className="p-mr-4 p-ml-2 info-text">{Parser(this.props.content)}</div>
                             <p><span style={{ whiteSpace: 'nowrap' }}>par <span className="font-weight-bold">{this.props.author}</span>, {this.props.date}</span></p>
                         </div>
                     </div>

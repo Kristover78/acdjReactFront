@@ -1,10 +1,12 @@
 import React from "react";
 import SectionImage from '../../assets/img/20191206_211356.jpg';
+import {Image} from "primereact/image";
 
 const HomePageSection2 = () => {
     return (
         <section>
-            <div className="p-col-12 p-md-6">
+            <div className="p-grid">
+                <div className="p-col-12 p-md-8">
                     <h2>Découvrir de nouvelles pépites ludiques</h2>
                     <ul className="fa-ul">
                         <li><i className="fa-li fas fa-star fa-2x pink-text ulawesome"></i><strong>Avant première:</strong> Nous essayons d&apos;organiser des <strong>séances
@@ -19,9 +21,10 @@ const HomePageSection2 = () => {
                             tranquillement chez soi avec ses amis.</li>
                     </ul>
                 </div>
-            <div className="p-col-12 p-md-6">
-                    <img src={SectionImage} className="p-shadow-4" alt="Nouveaux jeux" />
+                <div className="p-col-12 p-md-4">
+                    <Image src={SectionImage} preview={true} width="90%" alt="Nouveaux jeux" />
                 </div>
+            </div>
         </section>
     )
 }

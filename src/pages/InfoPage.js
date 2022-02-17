@@ -44,8 +44,9 @@ class InfoPage extends React.Component {
             </header>
             <main style={{ marginTop: '4rem' }}>
                 <div className="p-grid">
-                    <div className="p-col-6 p-offset-3">
-                        <DataView value={articles} layout={"list"} itemTemplate={itemTemplate} />
+                    <div className="p-col-12 p-sm-offset-1 p-sm-10 p-md-offset-2 p-md-8 p-lg-offset-3 p-lg-6">
+                        <h2 className="text-center mb-3">Infos</h2>
+                        <DataView value={articles} layout={"list"} itemTemplate={itemTemplate} paginator rows={5} />
                     </div>
                 </div>
             </main>
