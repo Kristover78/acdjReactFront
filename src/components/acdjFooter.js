@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 const ACDJFooter = () => {
     return (
@@ -9,11 +10,11 @@ const ACDJFooter = () => {
                 </div>
                 <div className="p-mr-2 p-as-center">
                     <ul className="p-menubar-root-list">
-                        <li><a href="/mentions"><i className="fas fa-balance-scale white-text" /></a></li>
+                        <li><NavLink to="/mentions"><i className="fas fa-balance-scale white-text" /></NavLink></li>
                         <li><a href="https://discord.gg/EkxMDpy" target="_blank" rel="noopener noreferrer"><i className="fab fa-discord white-text"/></a></li>
                         <li><a href="https://www.facebook.com/groups/1409286095952547/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f white-text"/></a></li>
                         <li><a href="https://twitter.com/SuperJoueur" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter white-text"/></a></li>
-                        <li><a href="/release"><i className="fas fa-code-branch white-text"/></a></li>
+                        <li><NavLink to="/release"><i className="fas fa-code-branch white-text"/></NavLink></li>
                     </ul>
                 </div>
             </div>

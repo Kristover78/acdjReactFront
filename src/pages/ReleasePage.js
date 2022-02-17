@@ -11,7 +11,7 @@ const ReleasePage = () => {
             <main style={{ marginTop: '5rem' }}>
                 <section>
                     <div className="p-grid">
-                        <div className="p-sm-offset-0 p-sm-12 p-md-offset-1 p-md-10 p-lg-offset-2 p-lg-7">
+                        <div className="p-col-12 p-md-offset-1 p-md-10 p-lg-offset-2 p-lg-7">
                         <h1>VERSIONS ET ROADMAP DU SITE</h1>
                         <h2>Roadmap :</h2>
                         <ol>
@@ -34,6 +34,10 @@ const ReleasePage = () => {
                             <li><span style={{textDecoration: "line-through"}}>Technique: Upgrade JSF (2.2 -&gt; 2.3)</span></li>
                         </ol>
                         <h2>Suivi des versions :</h2>
+                        <h4>v3.1.1 - 17/02/2022</h4>
+                        <ul>
+                            <li>Adaptation de l'UI aux smartphones.</li>
+                        </ul>
                         <h4>v3.1.0 - 11/12/2021</h4>
                             <ul>
                                 <li>Ajout de la page Ludothèque. Actuellement le site est statique. Tous les articles sont hardcodés en attendant la finalisation des microservices.</li>
