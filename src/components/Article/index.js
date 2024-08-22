@@ -39,11 +39,11 @@ class Article extends Component {
     }
 
     itemTemplate(item) {
-        return <img src={item} alt="Info" style={{ width: '100%' }} />
+        return <img src={item.default} alt="Info" style={{ width: '100%' }} />
     }
 
     thumbnailTemplate(item) {
-        return <img src={item} alt="Info" style={{ display: 'block' }} />;
+        return <img src={item.default} alt="Info" style={{ display: 'block' }} />;
     }
 
     onHide(name) {
@@ -62,7 +62,7 @@ class Article extends Component {
                         <div className="p-sm-12 p-md-4">
                             <div className="p-d-flex" style={{height: '100%'}}>
                             { this.state.showImage &&
-                            <div className="p-as-center"><img src={images[0]} onClick={() => this.setState({showGalleria:true})} alt="info" className="infoImg p-shadow-4"/></div>
+                            <div className="p-as-center"><img src={images[0].default} onClick={() => this.setState({showGalleria:true})} alt="info" className="infoImg p-shadow-4"/></div>
                             }
                             <CSSTransition
                                 in={this.state.showGalleria}
