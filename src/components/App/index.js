@@ -9,11 +9,6 @@ import AppRoutes from "../../navigations/AppRoutes";
 import appReducers from '../../services/redux/reducers.js'
 import '../../assets/scss/main.scss';
 
-//import Auth from './Auth';
-//const auth = new Auth();
-// https://auth0.com/blog/handling-authentication-in-react-with-context-and-hooks/
-// https://auth0.com/blog/react-tutorial-building-and-securing-your-first-app/
-
 class Index extends Component {
     render() {
         let History = createBrowserHistory();

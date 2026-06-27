@@ -1,3 +1,5 @@
+import moment from "moment";
+
 export function getServiceBaseUrl(){
     return 'http://localhost:8082';
 }
@@ -18,9 +20,11 @@ export function getSeancesList(){
     let dtNow = new Date();
     let nextFound = false;
     let cptr = 0;
+    const time = "20:00";
     seances.data.map((item) => {
-        let currentDt = new Date(item.date);
-        item.date = currentDt.toLocaleString('fr-FR');
+        let momentDt = moment(`${item.date} ${time}`, 'YYYY-MM-DD HH:mm');
+        item.date = momentDt.format();
+        let currentDt = momentDt.toDate();
         if (currentDt< dtNow){
             item.status = 'Terminée';
         }
@@ -33,6 +37,7 @@ export function getSeancesList(){
         }
         cptr ++;
     });
+    // T19:00:00.0Z
     /*function successCallback(res) {return res.data};
     function failureCallback(){return Promise.resolve(championsTestData)};
     return axios.get(getServiceBaseUrl()+'/api/public/card/champion/all')
