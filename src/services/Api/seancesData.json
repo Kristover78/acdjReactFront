@@ -1,128 +1,122 @@
 {"data" : [
     {
         "id" : 100,
-        "seance": "Vendredi 12 septembre 2025",
-        "date": "2025-09-12",
+        "seance": "Vendredi 11 septembre 2026",
+        "date": "2026-09-12",
         "status": "Planifiée"
     },
     {
         "id" : 101,
-        "seance": "Vendredi 26 septembre 2025",
-        "date": "2025-09-26",
+        "seance": "Vendredi 25 septembre 2026",
+        "date": "2026-09-26",
         "status": "Planifiée"
     },
     {
         "id" : 102,
-        "seance": "Samedi 11 octobre 2025",
-        "date": "2025-10-11",
+        "seance": "Samedi 10 octobre 2026",
+        "date": "2026-10-11",
         "status": "Planifiée"
     },
     {
         "id" : 103,
-        "seance": "Vendredi 17 octobre 2025",
-        "date": "2025-10-17",
+        "seance": "Vendredi 16 octobre 2026",
+        "date": "2026-10-17",
         "status": "Planifiée"
     },
     {
         "id" : 104,
-        "seance": "Vendredi 7 novembre 2025",
-        "date": "2025-11-07",
+        "seance": "Vendredi 6 novembre 2026",
+        "date": "2026-11-07",
         "status": "Planifiée"
     },
     {
         "id" : 105,
-        "seance": "Vendredi 21 novembre 2025",
-        "date": "2025-11-21",
+        "seance": "Vendredi 20 novembre 2026",
+        "date": "2026-11-21",
         "status": "Planifiée"
     },
     {
         "id" : 106,
-        "seance": "Samedi 6 décembre 2025",
-        "date": "2025-12-06",
+        "seance": "Samedi 5 décembre 2026",
+        "date": "2026-12-06",
         "status": "Planifiée"
     },
     {
         "id" : 107,
-        "seance": "Vendredi 19 décembre 2025",
-        "date": "2025-12-19",
+        "seance": "Vendredi 18 décembre 2026",
+        "date": "2026-12-19",
         "status": "Planifiée"
     },
     {
         "id" : 108,
-        "seance": "Vendredi 9 janvier 2026",
-        "date": "2026-01-09",
+        "seance": "Vendredi 8 janvier 2027",
+        "date": "2027-01-09",
         "status": "Planifiée"
     },
     {
         "id" : 109,
-        "seance": "Vendredi 16 janvier 2026",
-        "date": "2026-01-16",
+        "seance": "Samedi 23 janvier 2027",
+        "date": "2027-01-16",
         "status": "Planifiée"
     },
     {
         "id" : 110,
-        "seance": "Samedi 31 janvier 2026",
-        "date": "2026-01-31",
+        "seance": "Vendredi 5 février 2027",
+        "date": "2027-01-31",
         "status": "Planifiée"
     },
     {
         "id" : 111,
-        "seance": "Vendredi 13 février 2026",
-        "date": "2026-02-13",
+        "seance": "Vendredi 26 février 2027",
+        "date": "2027-02-13",
         "status": "Planifiée"
     },
     {
         "id" : 112,
-        "seance": "Vendredi 20 février 2026",
-        "date": "2026-02-20",
+        "seance": "Vendredi 5 mars 2027",
+        "date": "2027-02-20",
         "status": "Planifiée"
     },
     {
         "id" : 113,
-        "seance": "Vendredi 13 mars 2026",
-        "date": "2026-03-13",
+        "seance": "Vendredi 19 mars 2027",
+        "date": "2027-03-13",
         "status": "Planifiée"
     },
     {
         "id" : 114,
-        "seance": "Vendredi 27 mars 2026",
-        "date": "2026-03-27",
+        "seance": "Vendredi 2 avril 2026",
+        "date": "2027-03-27",
         "status": "Planifiée"
     },
     {
         "id" : 115,
-        "seance": "Samedi 11 avril 2026",
-        "date": "2026-04-11",
+        "seance": "Vendredi 23 avril 2027",
+        "date": "2027-04-11",
         "status": "Planifiée"
     },
     {
         "id" : 116,
-        "seance": "Vendredi 17 avril 2026",
-        "date": "2026-04-17",
+        "seance": "Samedi 8 mai 2027",
+        "date": "2027-04-17",
         "status": "Planifiée"
     },
     {
         "id" : 117,
-        "seance": "Vendredi 08 mai 2026",
-        "date": "2026-05-08",
+        "seance": "Vendredi 21 mai 2027",
+        "date": "2027-05-08",
         "status": "Planifiée"
     },
     {
         "id" : 118,
-        "seance": "Vendredi 22 mai 2026",
-        "date": "2026-05-22",
-        "status": "Planifiée"
-    },
-    {
-        "id" : 119,
-        "seance": "Samedi 6 juin 2026",
-        "date": "2026-06-06",
+        "seance": "Vendredi 4 juin 2027",
+        "date": "2027-05-22",
         "status": "Planifiée"
     },
     {
         "id" : 120,
-        "seance": "Vendredi 19 juin 2026",
-        "date": "2026-06-19",
+        "seance": "Vendredi 18 juin 2027",
+        "date": "2027-06-19",
         "status": "Planifiée"
     }
 ]
