@@ -50,7 +50,7 @@ class SeancesPage extends React.Component {
                 <div className="p-grid">
                     <div className="p-col-12 p-sm-offset-1 p-sm-10 p-md-offset-2 p-md-8 p-lg-offset-3 p-lg-6">
                         <h2 className="text-center mb-3">Calendrier des séances de jeu</h2>
-                        <p>Calendrier pour la saison 2025-2026.</p>
+                        <p>Calendrier pour la saison 2026-2027.</p>
                         <DataTable value={seances.data} selectionMode="single" selection={this.state.selectedSeance} dataKey="id" responsiveLayout="scroll" rowClassName={this.rowClassName}>
                             <Column field="seance" header="Séance" />
                             <Column field="date" header="Date" body={this.dateTemplate} />

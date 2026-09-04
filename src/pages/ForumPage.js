@@ -29,7 +29,7 @@ const ForumPage = () => {
                                 <div className="p-col-12 p-md-6">
                                     <iframe src="https://discordapp.com/widget?id=540809716042039298&theme=dark"
                                             width="350"
-                                            height="380" allowTransparency="true" frameBorder="0" title={"Discord"} />
+                                            height="380" /*allowTransparency="true"*/ frameBorder="0" title={"Discord"} />
                                 </div>
                             </div>
                         </section>
